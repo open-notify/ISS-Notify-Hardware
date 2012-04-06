@@ -1,0 +1,90 @@
+#usage "<b>Generate data for mounting machines in HTE format</b>\n"
+       "<p>"
+       "Generates files for smds on the top and bottom layers "
+       "which can be used with HTE mounting machines. "
+       "The x and y coordinates (units: mil) of the SMD elements are "
+       "calculated as mean of maximum and minimum value of the smds origin "
+       "points. The calculated value does not necessarily fit with the origin "
+       "point of the part in the layout."
+       "<p>"
+       "The format of the output data is:"
+       "<p>"
+       "<tt>name x-coord y-coord rotation value package</tt>"
+
+if (board) board(B) {
+
+  // Get filename
+  string fileName = dlgFileSave("Save File", filesetext(B.name, ".mnt"), "*.mnt");
+  if (fileName == "") exit(0);
+
+  output(fileName) {
+   printf("\"Name\", X [mils], Y [mils], rotation [deg], \"Value\", \"Package\"\n");
+
+   B.elements(E) {
+
+     int wasSmd,
+         xmax =-2147483648,
+         xmin = 2147483647,
+         ymax = xmax,
+         ymin = xmin;
+
+      wasSmd = 0;
+
+        E.package.contacts(C) {
+          if (C.smd && C.smd.layer == 1) {
+           wasSmd = 1;
+
+            if (C.x > xmax) xmax = C.x;
+            if (C.y > ymax) ymax = C.y;
+            if (C.x < xmin) xmin = C.x;
+            if (C.y < ymin) ymin = C.y;
+          }
+         }
+
+       if (wasSmd)
+         printf("\"%s\",%.5f,%.5f,%.0f,\"%s\",\"%s\"\n",
+         E.name, u2mil((xmin + xmax)/2), u2mil((ymin + ymax)/2),
+         E.angle, E.value, E.package.name);
+   }
+ }
+
+  // Get filename
+  fileName = dlgFileSave("Save File", filesetext(B.name, ".mnb"), "*.mnb");
+  if (fileName == "") exit(0);
+
+  output(fileName) {
+   printf("\"Name\", X [mils], Y [mils], rotation [deg], \"Value\", \"Package\"\n");
+
+   B.elements(E) {
+
+     int wasSmd,
+         xmax =-2147483648,
+         xmin = 2147483647,
+         ymax = xmax,
+         ymin = xmin;
+
+      wasSmd = 0;
+
+        E.package.contacts(C) {
+          if (C.smd && C.smd.layer == 16) {
+           wasSmd = 1;
+
+            if (C.x > xmax) xmax = C.x;
+            if (C.y > ymax) ymax = C.y;
+            if (C.x < xmin) xmin = C.x;
+            if (C.y < ymin) ymin = C.y;
+          }
+         }
+
+       if (wasSmd)
+         printf("\"%s\",%.5f,%.5f,%.0f,\"%s\",\"%s\"\n",
+         E.name, u2mil((xmin + xmax)/2), u2mil((ymin + ymax)/2),
+         E.angle, E.value, E.package.name);
+   }
+ }
+}
+
+else {
+   dlgMessageBox("\n    Start this ULP in a Board    \n");
+   exit (0);
+}
