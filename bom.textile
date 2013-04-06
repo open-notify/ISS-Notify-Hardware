@@ -10,9 +10,9 @@ table(table table-striped).
 |_. # |_. Part No. |_. Item |_. Order No. |_. Price |_. Total |
 | 1 | U1 | ATmega32u4 Atmel AVR Microcontroller | "ATMEGA32U4-AU-ND":http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/1914602 |>. $6.04 |>. $6.04 |
 | 1 | U2 | MCP7940N Real Time Clock | "MCP7940N-E/SN-ND":http://www.digikey.com/product-detail/en/MCP7940N-E%2FSN/MCP7940N-E%2FSN-ND/3872278 |>. $1.12 |>. $1.12 |
-| 1 | U3 | TPS63001 Switching Power Supply | "TPS63001":http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/1016512 |>. $3.89 |>. $3.89 |
+| 1 | U3 | TPS63001DRCR Switching Power Supply | "296-19643-1-ND":http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/1016512 |>. $3.89 |>. $3.89 |
 
 
-Download BOM
+h3. Download BOM
 
  * "ISS-Notify-BOM.csv":/ISS-Notify-Hardware/ISS-Notify-BOM.csv
