@@ -1,0 +1,15 @@
+navigation:
+- text: Home
+  url: /
+- text: API Docs
+  url: /Open-Notify-API
+  name: apidoc
+- text: Source Code
+  url: https://github.com/open-notify
+- text: About
+  url: /about.html
+
+hardware:
+ - text: ISS Notify Hardware Docs
+   url: /ISS-Notify-Hardware
+   name: harddocs
