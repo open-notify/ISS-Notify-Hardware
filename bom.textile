@@ -1,0 +1,10 @@
+---
+layout: harddoc
+name: bom
+title: ISS Notify -- Hardware Documentation | BOM
+---
+
+h1. Bill Of Materials
+
+|_. # |_. Item                  |_. Order No. |_. Price |_. Total |
+| 1   |Atmel AVR Microcontroller| ATmega32u4  |    3.05 |    3.05 |

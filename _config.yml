@@ -13,3 +13,6 @@ hardlinks:
  - text: ISS Notify Hardware Docs
    url: /ISS-Notify-Hardware
    name: harddocs
+ - text: Bill of Materials
+   url: /ISS-Notify-Hardware/bom
+   name: bom
