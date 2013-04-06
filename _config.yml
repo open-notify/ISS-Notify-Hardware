@@ -9,7 +9,7 @@ navigation:
 - text: About
   url: /about.html
 
-hardware:
+hardlinks:
  - text: ISS Notify Hardware Docs
    url: /ISS-Notify-Hardware
    name: harddocs
