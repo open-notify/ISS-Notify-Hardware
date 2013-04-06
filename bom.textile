@@ -7,5 +7,5 @@ title: ISS Notify -- Hardware Documentation | BOM
 h1. Bill Of Materials
 
 table(table table-striped).
-|_. # |_. Item                  |_. Order No. |_. Price |_. Total |
-| 1   |Atmel AVR Microcontroller| ATmega32u4  |    3.05 |    3.05 |
+|_. # |_. Part No. | _. Item                   |_. Order No. |_. Price |_. Total |
+| 1   | U1         | Atmel AVR Microcontroller | ATmega32u4  |>.  3.05 |>.  3.05 |
