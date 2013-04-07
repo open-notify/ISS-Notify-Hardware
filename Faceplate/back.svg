@@ -14,7 +14,7 @@
    height="301.18109"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="back.svg">
   <sodipodi:namedview
      id="base"
@@ -23,20 +23,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.3202616"
+     inkscape:zoom="1.2466709"
      inkscape:cx="186.02362"
      inkscape:cy="150.59054"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="true"
      units="mm"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1176"
+     inkscape:window-width="1280"
+     inkscape:window-height="749"
      inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1">
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        spacingy="0.25mm"
        spacingx="0.25mm"
@@ -250,13 +252,51 @@
     <path
        transform="matrix(0.8,0,0,1,14.728623,233.07977)"
        d="m 30.11811,21.259844 c 0,3.913829 -3.965982,7.086614 -8.858268,7.086614 -4.892286,0 -8.858268,-3.172785 -8.858268,-7.086614 0,-3.913829 3.965982,-7.086614 8.858268,-7.086614 4.892286,0 8.858268,3.172785 8.858268,7.086614 z"
-       sodipodi:ry="7.0866141"
-       sodipodi:rx="8.8582678"
-       sodipodi:cy="21.259844"
+       transform="matrix(0.8,0,0,1,14.728623,233.07977)" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica CE 35 Thin;-inkscape-font-specification:'Helvetica CE 35 Thin, Thin'"
+       x="187.79527"
+       y="172.64569"
+       id="text3761"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3763"
+         x="188.57027"
+         y="172.64569"
+         style="letter-spacing:1.54999995px">www.open-notify.org</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Helvetica CE;-inkscape-font-specification:Helvetica CE"
+       x="336.61417"
+       y="63.149632"
+       id="text3761-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802"
+         x="336.61417"
+         y="63.149632">ON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Helvetica CE;-inkscape-font-specification:Helvetica CE"
+       x="336.61417"
+       y="124.01578"
+       id="text3761-8-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3825"
+         x="336.61417"
+         y="124.01578">off</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#00ff00;stroke-width:0.52820522;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path3783-3-3"
        sodipodi:cx="21.259842"
-       id="path3783-6"
-       style="fill:none;stroke:#ff0000;stroke-width:1.05641007;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       sodipodi:cy="21.259844"
+       sodipodi:rx="8.8582678"
+       sodipodi:ry="7.0866141"
+       d="m 30.11811,21.259844 a 8.8582678,7.0866141 0 1 1 -17.716536,0 8.8582678,7.0866141 0 1 1 17.716536,0 z"
+       transform="matrix(1.5999993,0,0,1.9999994,153.77955,-20.629889)" />
   </g>
   <g
      style="display:inline"
