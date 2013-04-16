@@ -8,9 +8,13 @@ h1. Bill Of Materials
 
 table(table table-striped).
 |_. # |_. Part No. |_. Item |_. Order No. |_. Price |_. Total |
-| 1 | U1 | ATmega32u4 Atmel AVR Microcontroller | "ATMEGA32U4-AU-ND":http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/1914602 |>. $6.04 |>. $6.04 |
-| 1 | U2 | MCP7940N Real Time Clock | "MCP7940N-E/SN-ND":http://www.digikey.com/product-detail/en/MCP7940N-E%2FSN/MCP7940N-E%2FSN-ND/3872278 |>. $1.12 |>. $1.12 |
-| 1 | U3 | TPS63001DRCR Switching Power Supply | "296-19643-1-ND":http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/1016512 |>. $3.89 |>. $3.89 |
+| 1 | U3 | TPS63001DRCR Ic Reg Buck Bst Sync 3.3V 10Son | "296-19643-1-ND":http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/ |>. $1.00 |>. $1.00 |
+| 1 | U1 | ATMEGA32U4-AU Mcu Avr 32K Flash 16Mhz 44-Tqfp | "ATMEGA32U4-AU-ND":http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/ |>. $1.00 |>. $1.00 |
+| 1 | U2 | MCP7940N-E/SN Ic Rtcc 64B Sram Gp I2C 8Soic | "MCP7940N-E/SN-ND":http://www.digikey.com/product-detail/en/MCP7940N-E/SN/MCP7940N-E/SN-ND/ |>. $1.00 |>. $1.00 |
+| 1 |  | RC0603JR-0751KL Res 51K Ohm 1/10W 5% 0603 Smd | "311-51KGRCT-ND":http://www.digikey.com/product-detail/en/RC0603JR-0751KL/311-51KGRCT-ND/ |>. $1.00 |>. $1.00 |
+| 1 |  | RC0603JR-0739KL Res 39K Ohm 1/10W 5% 0603 Smd | "311-39KGRCT-ND":http://www.digikey.com/product-detail/en/RC0603JR-0739KL/311-39KGRCT-ND/ |>. $1.00 |>. $1.00 |
+| 1 | L1 | AIML-0805-3R3K-T Inductor Multilayer 3.3Uh 0805 | "535-11635-1-ND":http://www.digikey.com/product-detail/en/AIML-0805-3R3K-T/535-11635-1-ND/ |>. $1.00 |>. $1.00 |
+| 6 | LED | HSMF-C114 Led Chip Rgb 1.6X1.5X0.35Mm Smd | "516-1795-1-ND":http://www.digikey.com/product-detail/en/HSMF-C114/516-1795-1-ND/ |>. $1.00 |>. $6.00 |
 
 
 h3. Download BOM

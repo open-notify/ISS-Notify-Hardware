@@ -1,21 +1,23 @@
+import sys
 
 bom = []
-with open("ISS-Notify-BOM.csv", 'r') as csv:
-    for line in csv:
-        if line[0] == '#':
-            continue
+
+with open(sys.argv[1], 'r') as digikey:
+    digikey.readline()  # Skip first line
+    for line in digikey:
         li = line.split(',')
-        
-        num      =   int(li[0].strip())
-        part     =       li[1].strip()
-        desc     =       li[2].strip()
-        digikey  =       li[3].strip()
-        digilink =       li[4].strip()
-        price    = float(li[5].strip())
-        
 
-        bom.append({'n': num, 'part': part, 'desc': desc, 'digikey': digikey, 'digilink': digilink, 'price': price})
+        digikey_part =      li[0].strip()
+        manufacturer =      li[1].strip()
+        manuf_part   =      li[2].strip()
+        part         =      li[3].strip()
+        num          =  int(li[4].strip())
+        desc         =      li[7].strip()
 
+        #print num, part, manuf_part, desc.title(), dikikey_part
+        digilink = "http://www.digikey.com/product-detail/en/%s/%s/" % (manuf_part, digikey_part)
+        bom.append({'n': num, 'part': part, 'desc':  manuf_part+" "+desc.title(), 'digikey': digikey_part, 'digilink': digilink, 'price': 1.00})
+    
 with open("bom.textile", 'w') as f:
     f.write("""---
 layout: harddoc

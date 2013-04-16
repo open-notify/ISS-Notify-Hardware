@@ -1,4 +1,8 @@
-# no, Part No, Item, DigiKey No, DigiKey link, Price
-1,U1,ATmega32u4 Atmel AVR Microcontroller,ATMEGA32U4-AU-ND,http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/1914602,6.04
-1,U2,MCP7940N Real Time Clock,MCP7940N-E/SN-ND,http://www.digikey.com/product-detail/en/MCP7940N-E%2FSN/MCP7940N-E%2FSN-ND/3872278,1.12
-1,U3,TPS63001DRCR Switching Power Supply,296-19643-1-ND,http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/1016512,3.89
+﻿Digi-Key Part Number,Manufacturer,Manufacturer Part Number,Customer Reference,Quantity 1,Quantity 2,Quantity 3,Description,Comments,RoHS Status,Lead Free Status,REACH Status
+296-19643-1-ND,TEXAS INSTRUMENTS (VA),TPS63001DRCR,U3,1,0,0,IC REG BUCK BST SYNC 3.3V 10SON,Alternate Packaging Exists,RoHS Compliant,Lead free,Unaffected Jul-2011
+ATMEGA32U4-AU-ND,ATMEL,ATMEGA32U4-AU,U1,1,0,0,MCU AVR 32K FLASH 16MHZ 44-TQFP,Alternate Packaging Exists,RoHS Compliant,Lead free,Unaffected Jun-2012
+MCP7940N-E/SN-ND,MICROCHIP TECHNOLOGY,MCP7940N-E/SN,U2,1,0,0,IC RTCC 64B SRAM GP I2C 8SOIC,,RoHS Compliant,Lead free,Not Available
+311-51KGRCT-ND,YAGEO (VA),RC0603JR-0751KL,,1,0,0,RES 51K OHM 1/10W 5% 0603 SMD,Alternate Packaging Exists,RoHS Compliant,Lead free,Unaffected Sep-2011
+311-39KGRCT-ND,YAGEO (VA),RC0603JR-0739KL,,1,0,0,RES 39K OHM 1/10W 5% 0603 SMD,Alternate Packaging Exists,RoHS Compliant,Lead free,Unaffected Sep-2011
+535-11635-1-ND,ABRACON CORPORATION (VA),AIML-0805-3R3K-T,L1,1,0,0,INDUCTOR MULTILAYER 3.3UH 0805,Alternate Packaging Exists,RoHS Compliant,Lead free,Unaffected Jun-2012
+516-1795-1-ND,AVAGO TECHNOLOGIES US INC (VA),HSMF-C114,LED,6,0,0,LED CHIP RGB 1.6X1.5X0.35MM SMD,,RoHS Compliant,Lead free,Unaffected Nov-1998
