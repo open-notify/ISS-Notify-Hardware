@@ -8,13 +8,19 @@ h1. Bill Of Materials
 
 table(table table-striped).
 |_. # |_. Part No. |_. Item |_. Order No. |_. Price |_. Total |
-| 1 | U3 | TPS63001DRCR Ic Reg Buck Bst Sync 3.3V 10Son | "296-19643-1-ND":http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/ |>. $1.00 |>. $1.00 |
-| 1 | U1 | ATMEGA32U4-AU Mcu Avr 32K Flash 16Mhz 44-Tqfp | "ATMEGA32U4-AU-ND":http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/ |>. $1.00 |>. $1.00 |
-| 1 | U2 | MCP7940N-E/SN Ic Rtcc 64B Sram Gp I2C 8Soic | "MCP7940N-E/SN-ND":http://www.digikey.com/product-detail/en/MCP7940N-E/SN/MCP7940N-E/SN-ND/ |>. $1.00 |>. $1.00 |
-| 1 |  | RC0603JR-0751KL Res 51K Ohm 1/10W 5% 0603 Smd | "311-51KGRCT-ND":http://www.digikey.com/product-detail/en/RC0603JR-0751KL/311-51KGRCT-ND/ |>. $1.00 |>. $1.00 |
-| 1 |  | RC0603JR-0739KL Res 39K Ohm 1/10W 5% 0603 Smd | "311-39KGRCT-ND":http://www.digikey.com/product-detail/en/RC0603JR-0739KL/311-39KGRCT-ND/ |>. $1.00 |>. $1.00 |
-| 1 | L1 | AIML-0805-3R3K-T Inductor Multilayer 3.3Uh 0805 | "535-11635-1-ND":http://www.digikey.com/product-detail/en/AIML-0805-3R3K-T/535-11635-1-ND/ |>. $1.00 |>. $1.00 |
-| 6 | LED | HSMF-C114 Led Chip Rgb 1.6X1.5X0.35Mm Smd | "516-1795-1-ND":http://www.digikey.com/product-detail/en/HSMF-C114/516-1795-1-ND/ |>. $1.00 |>. $6.00 |
+| 1 | U3 | TPS63001DRCR Ic Reg Buck Bst Sync 3.3V 10Son | "296-19643-1-ND":http://www.digikey.com/product-detail/en/TPS63001DRCR/296-19643-1-ND/ |>. $3.89 |>. $3.89 |
+| 1 | U1 | ATMEGA32U4-AU Ic Mcu 8Bit 32Kb Flash 44Tqfp | "ATMEGA32U4-AU-ND":http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/ |>. $6.04 |>. $6.04 |
+| 1 | U2 | MCP7940N-E/SN Ic Rtcc 64B Sram Gp I2C 8Soic | "MCP7940N-E/SN-ND":http://www.digikey.com/product-detail/en/MCP7940N-E/SN/MCP7940N-E/SN-ND/ |>. $1.12 |>. $1.12 |
+| 1 |  | RC0603JR-0751KL Res 51K Ohm 1/10W 5% 0603 Smd | "311-51KGRCT-ND":http://www.digikey.com/product-detail/en/RC0603JR-0751KL/311-51KGRCT-ND/ |>. $0.10 |>. $0.10 |
+| 1 |  | RC0603JR-0739KL Res 39K Ohm 1/10W 5% 0603 Smd | "311-39KGRCT-ND":http://www.digikey.com/product-detail/en/RC0603JR-0739KL/311-39KGRCT-ND/ |>. $0.10 |>. $0.10 |
+| 1 | L1 | AIML-0805-3R3K-T Inductor Multilayer 3.3Uh 0805 | "535-11635-1-ND":http://www.digikey.com/product-detail/en/AIML-0805-3R3K-T/535-11635-1-ND/ |>. $0.06 |>. $0.06 |
+| 6 | LED | HSMF-C114 Led Chip Rgb 1.6X1.5X0.35Mm Smd | "516-1795-1-ND":http://www.digikey.com/product-detail/en/HSMF-C114/516-1795-1-ND/ |>. $2.03 |>. $12.18 |
+| 6 |  | CC0603ZRY5V9BB104 Cap Cer 0.1Uf 50V Y5V 0603 | "311-1343-1-ND":http://www.digikey.com/product-detail/en/CC0603ZRY5V9BB104/311-1343-1-ND/ |>. $0.10 |>. $0.60 |
+| 1 | SW1 | EG1224 Switch Slide Spdt R/A .5A Pcb | "EG2585-ND":http://www.digikey.com/product-detail/en/EG1224/EG2585-ND/ |>. $0.73 |>. $0.73 |
+| 1 | X1 | CX5Z-A2B2C5-70-8.0D18 Crystal 8.00Mhz 18Pf Smd | "370-1141-1-ND":http://www.digikey.com/product-detail/en/CX5Z-A2B2C5-70-8.0D18/370-1141-1-ND/ |>. $1.28 |>. $1.28 |
+| 1 | U4 | MCP73811T-420I/OT Ic Li-Ion/Li-Poly Ctrlr Sot23-5 | "MCP73811T-420I/OTCT-ND":http://www.digikey.com/product-detail/en/MCP73811T-420I/OT/MCP73811T-420I/OTCT-ND/ |>. $0.63 |>. $0.63 |
+| 2 | U5/U6 | TLC5971PWPR Ic Led Dvr Pwm 16B 12Ch 20Htssop | "296-27796-1-ND":http://www.digikey.com/product-detail/en/TLC5971PWPR/296-27796-1-ND/ |>. $3.24 |>. $6.48 |
+|_. Total: | | | | |>. $33.21 |
 
 
 h3. Download BOM
