@@ -434,16 +434,16 @@ package type OT</description>
 <wire x1="-8.89" y1="-1.27" x2="-8.89" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="SWITCH">
-<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="51"/>
-<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="1.75" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="21"/>
 <pad name="3" x="-3.25" y="2.25" drill="1"/>
 <pad name="4" x="3.25" y="2.25" drill="1"/>
 <pad name="2" x="3.25" y="-2.25" drill="1"/>
 <pad name="1" x="-3.25" y="-2.25" drill="1"/>
 <text x="-3" y="5" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-2.5" y1="3" x2="2.5" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="3" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3" x2="-2.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1" x2="-3" y2="1" width="0.127" layer="21"/>
 </package>
 <package name="_4/.225-BARE+HEAD_OR_SMALL_NUT">
 <description>1/8" hole without plating for #4 screw&lt;br&gt;
