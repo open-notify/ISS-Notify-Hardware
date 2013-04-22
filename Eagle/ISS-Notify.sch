@@ -8098,7 +8098,7 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="NAME" x="136.398" y="167.132" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="137.922" y="159.258" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SW1" gate="1" x="30.48" y="205.74"/>
+<instance part="SW1" gate="1" x="27.94" y="205.74"/>
 <instance part="U4" gate="G$1" x="68.58" y="167.64"/>
 <instance part="R6" gate="R" x="88.9" y="165.1" rot="R90"/>
 <instance part="GND15" gate="1" x="88.9" y="142.24"/>
@@ -8217,15 +8217,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="91.44" y1="246.38" x2="91.44" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R4" gate="R" pin="1"/>
-<pinref part="R5" gate="R" pin="2"/>
-<pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="60.96" y1="223.52" x2="50.8" y2="223.52" width="0.1524" layer="91"/>
-<junction x="50.8" y="223.52"/>
-</segment>
-</net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="C11" gate="CE" pin="1"/>
@@ -8240,15 +8231,15 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="58.42" y1="231.14" x2="60.96" y2="231.14" width="0.1524" layer="91"/>
 <junction x="58.42" y="233.68"/>
 <pinref part="SW1" gate="1" pin="S"/>
-<wire x1="33.02" y1="210.82" x2="33.02" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="213.36" x2="33.02" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="233.68" x2="38.1" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="210.82" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="213.36" x2="30.48" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="233.68" x2="38.1" y2="233.68" width="0.1524" layer="91"/>
 <junction x="38.1" y="233.68"/>
 <wire x1="132.08" y1="213.36" x2="132.08" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="193.04" x2="35.56" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="193.04" x2="35.56" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="213.36" x2="33.02" y2="213.36" width="0.1524" layer="91"/>
-<junction x="33.02" y="213.36"/>
+<wire x1="35.56" y1="213.36" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
+<junction x="30.48" y="213.36"/>
 <pinref part="U1" gate="ATMEGA" pin="VBUS"/>
 <wire x1="149.86" y1="213.36" x2="132.08" y2="213.36" width="0.1524" layer="91"/>
 </segment>
@@ -8745,8 +8736,8 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="66.04" y1="185.42" x2="48.26" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="1" pin="P"/>
-<wire x1="30.48" y1="200.66" x2="30.48" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="185.42" x2="48.26" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="200.66" x2="27.94" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="185.42" x2="48.26" y2="185.42" width="0.1524" layer="91"/>
 <junction x="48.26" y="185.42"/>
 </segment>
 </net>
@@ -9161,6 +9152,22 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="162.56" y="109.22"/>
 <label x="198.12" y="116.84" size="1.778" layer="95"/>
 <label x="162.56" y="121.92" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="BATSENSE" class="0">
+<segment>
+<pinref part="U1" gate="ATMEGA" pin="T1_OC4D_ADC9"/>
+<wire x1="205.74" y1="185.42" x2="215.9" y2="185.42" width="0.1524" layer="91"/>
+<label x="205.74" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R4" gate="R" pin="1"/>
+<pinref part="R5" gate="R" pin="2"/>
+<pinref part="U3" gate="G$1" pin="EN"/>
+<wire x1="60.96" y1="223.52" x2="50.8" y2="223.52" width="0.1524" layer="91"/>
+<junction x="50.8" y="223.52"/>
+<wire x1="50.8" y1="223.52" x2="40.64" y2="223.52" width="0.1524" layer="91"/>
+<label x="40.64" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
