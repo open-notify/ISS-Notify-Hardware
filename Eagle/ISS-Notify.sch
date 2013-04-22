@@ -281,7 +281,7 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <wire x1="2.5" y1="-1.5" x2="-2.5" y2="-1.5" width="0.127" layer="21"/>
 <smd name="1" x="-2.1" y="0" dx="2.2" dy="1.3" layer="1" rot="R90"/>
 <smd name="@1" x="2.1" y="0" dx="2.2" dy="1.3" layer="1" rot="R90"/>
-<text x="-2" y="2" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="CX5Z">
 <smd name="1" x="-3.2" y="-1.25" dx="2.2" dy="1.4" layer="1"/>
@@ -409,9 +409,9 @@ package type OT</description>
 <wire x1="-1.625" y1="-2.275" x2="-1.625" y2="-2.925" width="0.2" layer="51"/>
 <wire x1="-2.275" y1="-2.275" x2="-2.275" y2="-2.925" width="0.2" layer="51"/>
 <wire x1="-2.925" y1="-2.275" x2="-2.925" y2="-2.925" width="0.2" layer="51"/>
-<rectangle x1="-3" y1="-1.5" x2="3" y2="1.5" layer="42"/>
+<rectangle x1="-3" y1="-1.5" x2="3" y2="1.5" layer="40"/>
 <text x="-4" y="-3.5" size="0.8128" layer="21" font="vector" ratio="20">1</text>
-<text x="-4" y="-1.5" size="0.8128" layer="21" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="-4" y="-1.5" size="0.8128" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 </package>
 <package name="PROTOSPACE2">
 <pad name="GND" x="7.62" y="0" drill="1" shape="square"/>

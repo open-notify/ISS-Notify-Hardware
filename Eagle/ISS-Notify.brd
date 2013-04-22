@@ -15,11 +15,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -32,20 +32,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -60,28 +60,28 @@
 <layer number="100" name="Hidden_Layer" color="7" fill="1" visible="no" active="yes"/>
 <layer number="101" name="Hidden" color="15" fill="1" visible="no" active="yes"/>
 <layer number="102" name="Changes" color="12" fill="1" visible="no" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
-<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="ResistanceBottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="ResistanceBottom" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -89,6 +89,8 @@
 <wire x1="63.5" y1="0" x2="63.5" y2="63.5" width="0" layer="20"/>
 <wire x1="63.5" y1="63.5" x2="0" y2="63.5" width="0" layer="20"/>
 <wire x1="0" y1="63.5" x2="0" y2="0" width="0" layer="20"/>
+<rectangle x1="54.6" y1="47" x2="55.7" y2="50.5" layer="1"/>
+<rectangle x1="53.9" y1="46.5" x2="56.3" y2="51" layer="16"/>
 </plain>
 <libraries>
 <library name="ISS-Notify">
@@ -287,7 +289,7 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <wire x1="2.5" y1="-1.5" x2="-2.5" y2="-1.5" width="0.127" layer="21"/>
 <smd name="1" x="-2.1" y="0" dx="2.2" dy="1.3" layer="1" rot="R90"/>
 <smd name="@1" x="2.1" y="0" dx="2.2" dy="1.3" layer="1" rot="R90"/>
-<text x="-2" y="2" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="CX5Z">
 <smd name="1" x="-3.2" y="-1.25" dx="2.2" dy="1.4" layer="1"/>
@@ -415,9 +417,9 @@ package type OT</description>
 <wire x1="-1.625" y1="-2.275" x2="-1.625" y2="-2.925" width="0.2" layer="51"/>
 <wire x1="-2.275" y1="-2.275" x2="-2.275" y2="-2.925" width="0.2" layer="51"/>
 <wire x1="-2.925" y1="-2.275" x2="-2.925" y2="-2.925" width="0.2" layer="51"/>
-<rectangle x1="-3" y1="-1.5" x2="3" y2="1.5" layer="42"/>
+<rectangle x1="-3" y1="-1.5" x2="3" y2="1.5" layer="40"/>
 <text x="-4" y="-3.5" size="0.8128" layer="21" font="vector" ratio="20">1</text>
-<text x="-4" y="-1.5" size="0.8128" layer="21" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="-4" y="-1.5" size="0.8128" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 </package>
 <package name="PROTOSPACE2">
 <pad name="GND" x="7.62" y="0" drill="1" shape="square"/>
@@ -1763,60 +1765,193 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="ISS-Notify" package="TQFP-44" value="ATMEGA32U4" x="31.75" y="31.75"/>
-<element name="J1" library="ISS-Notify" package="AVRISP" value="AVRISP" x="12.684" y="31.35"/>
-<element name="USB" library="ISS-Notify" package="USBMICROSMT" value="CON_USB-MICRO-6GND" x="1.47" y="17.78" rot="R270"/>
-<element name="U2" library="ISS-Notify" package="MCP7940N" value="MCP7940N" x="44.45" y="9.144"/>
-<element name="U3" library="ISS-Notify" package="QFN10" value="TPS63001" x="15.01" y="57.1" rot="R180"/>
-<element name="L1" library="ISS-Notify" package="0805-C-NOSILK" value="3.3 uH" x="15.06" y="60.56"/>
-<element name="LED1" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="31.75" y="57.15" rot="R180"/>
-<element name="COINCELL" library="ISS-Notify" package="COINCELL" value="3V" x="58.42" y="20.32" rot="R90"/>
-<element name="X2" library="ISS-Notify" package="ABS10" value="32.768 kHz" x="44.45" y="4.318"/>
-<element name="R1" library="rcl_custom" package="0603-C-NOSILK" value="22" x="7.058" y="17.418"/>
-<element name="R2" library="rcl_custom" package="0603-C-NOSILK" value="22" x="7.058" y="18.942"/>
-<element name="R3" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="38" y="39.116" rot="R270"/>
-<element name="R4" library="rcl_custom" package="0603-C-NOSILK" value="39 k" x="12.64" y="53.25" rot="R90"/>
-<element name="R5" library="rcl_custom" package="0603-C-NOSILK" value="51 k" x="14.73" y="52.54" rot="R180"/>
-<element name="C1" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="27.75" y="40.386" rot="R90"/>
-<element name="C2" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="35.75" y="40.386" rot="R90"/>
-<element name="C3" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="40.486" y="28.55"/>
-<element name="C4" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="24.892" y="25.4" rot="R180"/>
-<element name="C5" library="rcl_custom" package="0603-C-NOSILK" value="" x="26.216" y="20.656" rot="R90"/>
-<element name="C6" library="rcl_custom" package="0603-C-NOSILK" value="" x="37.316" y="21.744" rot="R270"/>
-<element name="C7" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="41.202" y="10.822" rot="R270"/>
-<element name="C8" library="rcl_custom" package="0603-C-NOSILK" value="10 pF" x="40.314" y="5.044" rot="R90"/>
-<element name="C9" library="rcl_custom" package="0603-C-NOSILK" value="12 pF" x="48.586" y="5.044" rot="R90"/>
-<element name="C10" library="rcl_custom" package="0805-C-NOSILK" value="22 uF" x="19.9" y="54.8" rot="R270"/>
-<element name="C11" library="rcl_custom" package="0805-C-NOSILK" value="10 uF" x="9.86" y="56.85" rot="R90"/>
-<element name="C12" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="23.114" y="31.75" rot="R180"/>
-<element name="C13" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="18.16" y="54.9" rot="R270"/>
-<element name="X1" library="ISS-Notify" package="CX5Z" value="8 MHz" x="31.75" y="21.136"/>
-<element name="SW1" library="ISS-Notify" package="ESWITCH" value="9077-1" x="7.874" y="45.72" rot="MR90"/>
-<element name="U4" library="ISS-Notify" package="SOT23-5L" value="MCP73811" x="55.118" y="48.768" rot="R90"/>
-<element name="R6" library="rcl_custom" package="0603-C-NOSILK" value="2 k" x="54.518" y="45.974" rot="R180"/>
-<element name="D1" library="ISS-Notify" package="MBR120" value="DIODE" x="47.81" y="58.55" rot="R90"/>
-<element name="D2" library="ISS-Notify" package="MBR120" value="DIODE" x="52.678" y="8.104"/>
-<element name="J2" library="ISS-Notify" package="JSTHEAD" value="JST2" x="52.07" y="58.42" rot="MR270"/>
-<element name="U5" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="38.1" y="48.26" rot="R270"/>
-<element name="U6" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="26.67" y="12.7" rot="R90"/>
-<element name="R7" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="33.362" y="51.934" rot="R270"/>
-<element name="R8" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="30.998" y="9.05" rot="R90"/>
-<element name="LED2" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="49.7078" y="49.7078" rot="R180"/>
-<element name="LED3" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="57.15" y="31.75" rot="R180"/>
-<element name="LED4" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="49.7078" y="13.789659375"/>
-<element name="LED5" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="31.75" y="6.35"/>
-<element name="LED6" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="13.789659375" y="13.789659375"/>
-<element name="LED7" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="6.35" y="31.75"/>
-<element name="LED8" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="13.789659375" y="49.7078"/>
-<element name="C14" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="40.894" y="53.34" rot="R90"/>
-<element name="C15" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="23.876" y="7.62" rot="R270"/>
-<element name="J3" library="ISS-Notify" package="PROTOSPACE2" value="PROTOSPACE2" x="31.75" y="61.26"/>
-<element name="SW2" library="ISS-Notify" package="SWITCH" value="SWITCH" x="13.192" y="6.036" rot="MR270"/>
-<element name="U$1" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="59.69"/>
-<element name="U$2" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="59.69"/>
-<element name="U$3" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="3.81"/>
-<element name="U$4" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="3.81"/>
-<element name="C16" library="rcl_custom" package="0603-C-NOSILK" value="100 pF" x="48.36" y="8.766" rot="R90"/>
+<element name="U1" library="ISS-Notify" package="TQFP-44" value="ATMEGA32U4" x="31.75" y="31.75" smashed="yes">
+<attribute name="NAME" x="30.5" y="31.635" size="0.8" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="J1" library="ISS-Notify" package="AVRISP" value="AVRISP" x="12.684" y="31.35" smashed="yes">
+<attribute name="NAME" x="7.684" y="28.35" size="1.27" layer="21" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="USB" library="ISS-Notify" package="USBMICROSMT" value="CON_USB-MICRO-6GND" x="1.47" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.47" y="21.78" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="U2" library="ISS-Notify" package="MCP7940N" value="MCP7940N" x="44.45" y="9.144" smashed="yes">
+<attribute name="NAME" x="41.52" y="7.314" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="U3" library="ISS-Notify" package="QFN10" value="TPS63001" x="15.01" y="57.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.41" y="59.5" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="L1" library="ISS-Notify" package="0805-C-NOSILK" value="3.3 uH" x="15.06" y="60.56" smashed="yes">
+<attribute name="NAME" x="14.46" y="61.66" size="0.8" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="14.26" y="58.66" size="1" layer="27" ratio="10"/>
+</element>
+<element name="LED1" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="31.75" y="57.15" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.99" y="55.78" size="1" layer="25" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="COINCELL" library="ISS-Notify" package="COINCELL" value="3V" x="58.42" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="65.42" y="18.32" size="0.81" layer="25" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="X2" library="ISS-Notify" package="ABS10" value="32.768 kHz" x="44.45" y="4.318" smashed="yes">
+<attribute name="NAME" x="41.05" y="1.218" size="1.27" layer="25"/>
+</element>
+<element name="R1" library="rcl_custom" package="0603-C-NOSILK" value="22" x="7.058" y="17.418" smashed="yes">
+<attribute name="NAME" x="6.258" y="18.368" size="1" layer="25" ratio="10"/>
+<attribute name="VALUE" x="6.258" y="15.418" size="1" layer="27" ratio="10"/>
+</element>
+<element name="R2" library="rcl_custom" package="0603-C-NOSILK" value="22" x="7.058" y="18.942" smashed="yes">
+<attribute name="NAME" x="6.258" y="19.892" size="1" layer="25" ratio="10"/>
+<attribute name="VALUE" x="6.258" y="16.942" size="1" layer="27" ratio="10"/>
+</element>
+<element name="R3" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="38" y="39.116" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.95" y="39.916" size="1" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="36" y="39.916" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R4" library="rcl_custom" package="0603-C-NOSILK" value="39 k" x="12.64" y="53.25" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.79" y="52.55" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="14.64" y="52.45" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R5" library="rcl_custom" package="0603-C-NOSILK" value="51 k" x="14.73" y="52.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.53" y="51.79" size="0.8" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="15.53" y="54.54" size="1" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C1" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="27.75" y="40.386" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.8" y="39.586" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="29.75" y="39.586" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C2" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="35.75" y="40.386" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.8" y="39.586" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="37.75" y="39.586" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C3" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="40.486" y="28.55" smashed="yes">
+<attribute name="NAME" x="39.686" y="29.5" size="1" layer="25" ratio="10"/>
+<attribute name="VALUE" x="39.686" y="26.55" size="1" layer="27" ratio="10"/>
+</element>
+<element name="C4" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="24.892" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="25.692" y="24.45" size="1" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="25.692" y="27.4" size="1" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C5" library="rcl_custom" package="0603-C-NOSILK" value="" x="26.216" y="20.656" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.266" y="19.856" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="28.216" y="19.856" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C6" library="rcl_custom" package="0603-C-NOSILK" value="" x="37.316" y="21.744" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.266" y="22.544" size="1" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="35.316" y="22.544" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C7" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="41.202" y="10.822" smashed="yes" rot="R270">
+<attribute name="NAME" x="42.152" y="11.622" size="1" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="39.202" y="11.622" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C8" library="rcl_custom" package="0603-C-NOSILK" value="10 pF" x="40.314" y="5.044" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.364" y="4.244" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="42.314" y="4.244" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C9" library="rcl_custom" package="0603-C-NOSILK" value="12 pF" x="48.586" y="5.044" smashed="yes" rot="R90">
+<attribute name="NAME" x="47.636" y="4.244" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="50.586" y="4.244" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C10" library="rcl_custom" package="0805-C-NOSILK" value="22 uF" x="19.9" y="54.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.1" y="55.9" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="VALUE" x="18" y="55.6" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C11" library="rcl_custom" package="0805-C-NOSILK" value="10 uF" x="9.86" y="56.85" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.66" y="55.75" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="11.76" y="56.05" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C12" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="23.114" y="31.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="23.914" y="30.8" size="1" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="23.914" y="33.75" size="1" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C13" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="18.16" y="54.9" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.71" y="53.6" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="VALUE" x="16.16" y="55.7" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="X1" library="ISS-Notify" package="CX5Z" value="8 MHz" x="31.75" y="21.136" smashed="yes">
+<attribute name="NAME" x="28.25" y="24.136" size="0.8128" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="SW1" library="ISS-Notify" package="ESWITCH" value="9077-1" x="7.874" y="45.72" smashed="yes" rot="MR90">
+<attribute name="NAME" x="3.474" y="54.62" size="1.27" layer="26" font="vector" rot="MR180"/>
+</element>
+<element name="U4" library="ISS-Notify" package="SOT23-5L" value="MCP73811" x="55.118" y="48.768" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.413" y="46.563" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="58.547" y="46.863" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R6" library="rcl_custom" package="0603-C-NOSILK" value="2 k" x="53.774" y="45.582" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.824" y="44.782" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="55.774" y="44.782" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="D1" library="ISS-Notify" package="MBR120" value="DIODE" x="47.81" y="58.55" smashed="yes" rot="R90"/>
+<element name="D2" library="ISS-Notify" package="MBR120" value="DIODE" x="52.678" y="8.104" smashed="yes">
+<attribute name="NAME" x="51.178" y="10.104" size="0.8" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="J2" library="ISS-Notify" package="JSTHEAD" value="JST2" x="52.07" y="58.42" smashed="yes" rot="MR270">
+<attribute name="NAME" x="48.07" y="61.42" size="0.81" layer="26" font="vector" ratio="20" rot="MR270"/>
+</element>
+<element name="U5" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="38.1" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.3" y="52.06" size="0.8128" layer="21" font="vector" ratio="20"/>
+</element>
+<element name="U6" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="26.67" y="12.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.17" y="8.7" size="0.8128" layer="21" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R7" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="33.362" y="51.934" smashed="yes" rot="R270">
+<attribute name="NAME" x="31.812" y="52.634" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="VALUE" x="31.362" y="52.734" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R8" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="30.998" y="9.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.048" y="8.25" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="32.998" y="8.25" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="LED2" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="49.7078" y="49.7078" smashed="yes" rot="R180">
+<attribute name="NAME" x="52.2478" y="48.4378" size="1" layer="25" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="LED3" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="57.15" y="31.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.69" y="30.48" size="1" layer="25" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="LED4" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="49.7078" y="13.789659375" smashed="yes">
+<attribute name="NAME" x="47.1678" y="15.059659375" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="LED5" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="31.75" y="6.35" smashed="yes">
+<attribute name="NAME" x="29.21" y="7.62" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="LED6" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="13.789659375" y="13.789659375" smashed="yes">
+<attribute name="NAME" x="11.249659375" y="15.059659375" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="LED7" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="6.35" y="31.75" smashed="yes">
+<attribute name="NAME" x="3.81" y="33.02" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="LED8" library="ISS-Notify" package="SMDRGBLED" value="RGBLED" x="13.789659375" y="49.7078" smashed="yes">
+<attribute name="NAME" x="12.249659375" y="47.2778" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="C14" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="40.894" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.644" y="52.34" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="42.894" y="52.54" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C15" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="23.876" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="24.826" y="8.42" size="1" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="21.876" y="8.42" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="J3" library="ISS-Notify" package="PROTOSPACE2" value="PROTOSPACE2" x="31.75" y="61.26" smashed="yes"/>
+<element name="SW2" library="ISS-Notify" package="SWITCH" value="SWITCH" x="13.192" y="6.036" smashed="yes" rot="MR270">
+<attribute name="NAME" x="8.192" y="9.036" size="1.27" layer="26" rot="MR270"/>
+</element>
+<element name="U$1" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="59.69" smashed="yes">
+<attribute name="VALUE" x="6.985" y="56.515" size="1.27" layer="27"/>
+</element>
+<element name="U$2" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="59.69" smashed="yes">
+<attribute name="NAME" x="62.5475" y="62.5475" size="1.27" layer="25"/>
+<attribute name="VALUE" x="62.865" y="56.515" size="1.27" layer="27"/>
+</element>
+<element name="U$3" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="3.81" smashed="yes">
+<attribute name="NAME" x="62.5475" y="6.6675" size="1.27" layer="25"/>
+<attribute name="VALUE" x="62.865" y="0.635" size="1.27" layer="27"/>
+</element>
+<element name="U$4" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="3.81" smashed="yes">
+<attribute name="NAME" x="6.6675" y="6.6675" size="1.27" layer="25"/>
+<attribute name="VALUE" x="6.985" y="0.635" size="1.27" layer="27"/>
+</element>
+<element name="C16" library="rcl_custom" package="0603-C-NOSILK" value="100 pF" x="48.36" y="8.766" smashed="yes" rot="R90">
+<attribute name="NAME" x="47.41" y="7.966" size="1" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="50.36" y="7.966" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="UVCC">
@@ -1979,7 +2114,7 @@ design rules under a new name.</description>
 <via x="31.7" y="31.6" extent="1-16" drill="0.36"/>
 <via x="38.2" y="25.9" extent="1-16" drill="0.36"/>
 <via x="52.2" y="37.4" extent="1-16" drill="0.36"/>
-<via x="56.7" y="45.8" extent="1-16" drill="0.36"/>
+<via x="55.4" y="44.1" extent="1-16" drill="0.36"/>
 <via x="46.1" y="50.8" extent="1-16" drill="0.36"/>
 <via x="25.7" y="48.9" extent="1-16" drill="0.36"/>
 <via x="27.4" y="42.7" extent="1-16" drill="0.36"/>
@@ -1987,7 +2122,7 @@ design rules under a new name.</description>
 <via x="19.4" y="34.9" extent="1-16" drill="0.36"/>
 <via x="7" y="22.6" extent="1-16" drill="0.36"/>
 <via x="6.1" y="11.2" extent="1-16" drill="0.36"/>
-<via x="38.2" y="48.3" extent="1-16" drill="0.36"/>
+<via x="38.1" y="48.3" extent="1-16" drill="0.36"/>
 <via x="53.4" y="55.4" extent="1-16" drill="0.36"/>
 <via x="54.2" y="56.8" extent="1-16" drill="0.36"/>
 <via x="49.6" y="58.3" extent="1-16" drill="0.36"/>
@@ -2017,14 +2152,14 @@ design rules under a new name.</description>
 <wire x1="15.43" y1="53.43" x2="15.7" y2="53.7" width="0.254" layer="1"/>
 <wire x1="15.7" y1="53.7" x2="15.8" y2="53.7" width="0.254" layer="1"/>
 <via x="15.6" y="28.2" extent="1-16" drill="0.36"/>
-<via x="55.1" y="51" extent="1-16" drill="0.36"/>
-<via x="55.1" y="50" extent="1-16" drill="0.36"/>
-<via x="55.1" y="48.9" extent="1-16" drill="0.36"/>
-<wire x1="27.5" y1="14.7" x2="25.9" y2="14.7" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="12.7" x2="25.9" y2="14.7" width="0" layer="19" extent="1-1"/>
-<wire x1="27.6" y1="10.6" x2="27.575" y2="10.425" width="0" layer="19" extent="1-1"/>
-<wire x1="25.9" y1="10.6" x2="26.8" y2="11.2" width="0" layer="19" extent="1-1"/>
-<wire x1="35.3" y1="50.535" x2="33.362" y2="52.634" width="0" layer="19" extent="1-1"/>
+<via x="57.9" y="48.8" extent="1-16" drill="0.36"/>
+<via x="37.3" y="50.5" extent="1-16" drill="0.36"/>
+<via x="38.9" y="50.5" extent="1-16" drill="0.36"/>
+<via x="39" y="45.9" extent="1-16" drill="0.36"/>
+<via x="37.2" y="45.9" extent="1-16" drill="0.36"/>
+<via x="15" y="57.1" extent="1-16" drill="0.36"/>
+<wire x1="35.3" y1="50.535" x2="37.265" y2="50.535" width="0.254" layer="1"/>
+<wire x1="37.265" y1="50.535" x2="37.3" y2="50.5" width="0.254" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="44"/>
@@ -2358,10 +2493,6 @@ design rules under a new name.</description>
 <wire x1="1.5" y1="41.5" x2="5.8" y2="45.8" width="0.6096" layer="1"/>
 <wire x1="5.8" y1="45.8" x2="7.794" y2="45.8" width="0.6096" layer="1"/>
 <wire x1="7.794" y1="45.8" x2="7.874" y2="45.72" width="0.6096" layer="1"/>
-<wire x1="53.818" y1="49.718" x2="53.818" y2="49.182" width="0.254" layer="1"/>
-<wire x1="53.818" y1="49.182" x2="55.2" y2="47.8" width="0.254" layer="1"/>
-<wire x1="55.2" y1="47.8" x2="56.4" y2="47.8" width="0.254" layer="1"/>
-<wire x1="56.4" y1="47.8" x2="56.418" y2="47.818" width="0.254" layer="1"/>
 <wire x1="7.874" y1="45.72" x2="7.874" y2="45.874" width="0.6096" layer="1"/>
 <wire x1="7.874" y1="45.874" x2="9.9" y2="47.9" width="0.6096" layer="1"/>
 <via x="9.9" y="47.9" extent="1-16" drill="0.36"/>
@@ -2387,11 +2518,19 @@ design rules under a new name.</description>
 <wire x1="53.8" y1="52.3" x2="49.4" y2="56.7" width="0.6096" layer="1"/>
 <wire x1="49.4" y1="56.7" x2="47.86" y2="56.7" width="0.6096" layer="1"/>
 <wire x1="47.86" y1="56.7" x2="47.81" y2="56.75" width="0.6096" layer="1"/>
+<wire x1="56.418" y1="47.818" x2="56.418" y2="46.418" width="0.254" layer="1"/>
+<wire x1="56.418" y1="46.418" x2="55.6" y2="45.6" width="0.254" layer="1"/>
+<wire x1="55.6" y1="45.6" x2="52.9" y2="45.6" width="0.254" layer="1"/>
+<wire x1="52.9" y1="45.6" x2="52.5" y2="46" width="0.254" layer="1"/>
+<wire x1="52.5" y1="46" x2="52.5" y2="49.2" width="0.254" layer="1"/>
+<wire x1="52.5" y1="49.2" x2="53" y2="49.7" width="0.254" layer="1"/>
+<wire x1="53" y1="49.7" x2="53.8" y2="49.7" width="0.254" layer="1"/>
+<wire x1="53.8" y1="49.7" x2="53.818" y2="49.718" width="0.254" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U4" pad="5"/>
 <contactref element="R6" pad="2"/>
-<wire x1="53.818" y1="45.974" x2="53.818" y2="47.818" width="0.254" layer="1"/>
+<wire x1="53.774" y1="46.282" x2="53.818" y2="47.818" width="0.254" layer="1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="U4" pad="3"/>
@@ -2957,6 +3096,15 @@ design rules under a new name.</description>
 <wire x1="28.2" y1="24" x2="28.6" y2="24.3" width="0.254" layer="1"/>
 <wire x1="28.6" y1="24.3" x2="28.6" y2="25.7" width="0.254" layer="1"/>
 <wire x1="28.6" y1="25.7" x2="28.55" y2="25.75" width="0.254" layer="1"/>
+</signal>
+<signal name="N$9">
+<via x="55.1" y="48.8" extent="1-16" drill="0.36"/>
+</signal>
+<signal name="N$43">
+<via x="55.1" y="50.1" extent="1-16" drill="0.36"/>
+</signal>
+<signal name="N$44">
+<via x="55.1" y="47.4" extent="1-16" drill="0.36"/>
 </signal>
 </signals>
 </board>
