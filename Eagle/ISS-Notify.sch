@@ -529,6 +529,43 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <text x="4.445" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="0" y="0" drill="3.175"/>
 </package>
+<package name="LOGO">
+<text x="18.7" y="1.5" size="1" layer="21" font="vector" ratio="10">&gt;VALUE</text>
+<text x="9.7" y="1.5" size="1" layer="21" font="vector" ratio="10">ISS Notify</text>
+<text x="9.7" y="0" size="0.8" layer="21" font="vector">open-notify.org</text>
+<wire x1="0.2" y1="1.5" x2="3.2" y2="5.5" width="0.3" layer="21"/>
+<wire x1="0.8" y1="1.2" x2="3.9" y2="5.3" width="0.3" layer="21"/>
+<wire x1="4.5" y1="-0.2" x2="8" y2="4.2" width="0.3" layer="21"/>
+<wire x1="5.3" y1="-0.5" x2="7.1" y2="1.8" width="0.3" layer="21"/>
+<wire x1="7.1" y1="1.8" x2="8.8" y2="4" width="0.3" layer="21"/>
+<wire x1="2" y1="3.7" x2="7.1" y2="1.8" width="0.4" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="3.6" y="3.1"/>
+<vertex x="3.2" y="2.5"/>
+<vertex x="2.7" y="2.7"/>
+<vertex x="2.4" y="2.3"/>
+<vertex x="2.9" y="2"/>
+<vertex x="2.6" y="1.6"/>
+<vertex x="2.9" y="1.4"/>
+<vertex x="3.3" y="1.7"/>
+<vertex x="3.8" y="1.4"/>
+<vertex x="4" y="1.6"/>
+<vertex x="4.3" y="1.4"/>
+<vertex x="4.7" y="1.4"/>
+<vertex x="3.9" y="1.9"/>
+<vertex x="4" y="2.3"/>
+<vertex x="4.7" y="3.3"/>
+<vertex x="5.4" y="3"/>
+<vertex x="5.5" y="3.2"/>
+<vertex x="5" y="3.4"/>
+<vertex x="5.3" y="3.9"/>
+<vertex x="5.1" y="4"/>
+<vertex x="5.3" y="4.4"/>
+<vertex x="5.1" y="4.5"/>
+<vertex x="4.9" y="4.2"/>
+<vertex x="4.6" y="4.3"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -858,6 +895,10 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <text x="1.27" y="2.54" size="1.27" layer="95">&gt;Name</text>
 <text x="2.54" y="-2.54" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="LOGO">
+<text x="0" y="0" size="1.778" layer="94">ISS LOGO</text>
+<text x="0" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1277,6 +1318,18 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </technologies>
 </device>
 <device name="/.400" package="_4/.400-BARE+STD_TOOL_CLEARANCE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGO" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LOGO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LOGO">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8017,6 +8070,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="U$3" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="U$4" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
+<part name="U$5" library="ISS-Notify" deviceset="LOGO" device="" value="V0.3"/>
 </parts>
 <sheets>
 <sheet>
@@ -8142,6 +8196,7 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="NAME" x="267.208" y="204.089" size="1.778" layer="95"/>
 <attribute name="VALUE" x="269.113" y="193.548" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U$5" gate="G$1" x="22.86" y="22.86"/>
 </instances>
 <busses>
 <bus name="D+,D-">

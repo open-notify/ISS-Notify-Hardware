@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -540,6 +540,43 @@ package type OT</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
+<package name="LOGO">
+<text x="18.7" y="1.5" size="1" layer="21" font="vector" ratio="10">&gt;VALUE</text>
+<text x="9.7" y="1.5" size="1" layer="21" font="vector" ratio="10">ISS Notify</text>
+<text x="9.7" y="0" size="0.8" layer="21" font="vector">open-notify.org</text>
+<wire x1="0.2" y1="1.5" x2="3.2" y2="5.5" width="0.3" layer="21"/>
+<wire x1="0.8" y1="1.2" x2="3.9" y2="5.3" width="0.3" layer="21"/>
+<wire x1="4.5" y1="-0.2" x2="8" y2="4.2" width="0.3" layer="21"/>
+<wire x1="5.3" y1="-0.5" x2="7.1" y2="1.8" width="0.3" layer="21"/>
+<wire x1="7.1" y1="1.8" x2="8.8" y2="4" width="0.3" layer="21"/>
+<wire x1="2" y1="3.7" x2="7.1" y2="1.8" width="0.4" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="3.6" y="3.1"/>
+<vertex x="3.2" y="2.5"/>
+<vertex x="2.7" y="2.7"/>
+<vertex x="2.4" y="2.3"/>
+<vertex x="2.9" y="2"/>
+<vertex x="2.6" y="1.6"/>
+<vertex x="2.9" y="1.4"/>
+<vertex x="3.3" y="1.7"/>
+<vertex x="3.8" y="1.4"/>
+<vertex x="4" y="1.6"/>
+<vertex x="4.3" y="1.4"/>
+<vertex x="4.7" y="1.4"/>
+<vertex x="3.9" y="1.9"/>
+<vertex x="4" y="2.3"/>
+<vertex x="4.7" y="3.3"/>
+<vertex x="5.4" y="3"/>
+<vertex x="5.5" y="3.2"/>
+<vertex x="5" y="3.4"/>
+<vertex x="5.3" y="3.9"/>
+<vertex x="5.1" y="4"/>
+<vertex x="5.3" y="4.4"/>
+<vertex x="5.1" y="4.5"/>
+<vertex x="4.9" y="4.2"/>
+<vertex x="4.6" y="4.3"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -848,6 +885,10 @@ package type OT</description>
 <pin name="VSS" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <text x="-7.62" y="-12.7" size="1.27" layer="97">MCP73811</text>
 <text x="-7.62" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="LOGO">
+<text x="0" y="0" size="1.778" layer="94">ISS LOGO</text>
+<text x="0" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1248,6 +1289,18 @@ AIML-0805-3R3K-T</description>
 <connect gate="G$1" pin="VIN" pad="4"/>
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGO" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LOGO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LOGO">
 <technologies>
 <technology name=""/>
 </technologies>
