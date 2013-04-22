@@ -3129,9 +3129,9 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <signal name="N$42">
 <contactref element="R3" pad="2"/>
 <contactref element="U1" pad="33"/>
-<wire x1="37.75" y1="35.75" x2="37.75" y2="36.75" width="0.4064" layer="1"/>
-<wire x1="37.75" y1="36.75" x2="38" y2="37" width="0.4064" layer="1"/>
-<wire x1="38" y1="37" x2="38" y2="38.416" width="0.4064" layer="1"/>
+<wire x1="37.75" y1="35.75" x2="37.75" y2="36.75" width="0.254" layer="1"/>
+<wire x1="37.75" y1="36.75" x2="38" y2="37" width="0.254" layer="1"/>
+<wire x1="38" y1="37" x2="38" y2="38.416" width="0.254" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="J1" pad="5"/>
