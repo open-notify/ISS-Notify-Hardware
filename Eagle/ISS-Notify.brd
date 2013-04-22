@@ -3156,6 +3156,12 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="11.4" y1="52.6" x2="12.59" y2="52.6" width="0.254" layer="1"/>
 <wire x1="12.59" y1="52.6" x2="12.64" y2="52.55" width="0.254" layer="1"/>
 </signal>
+<signal name="N$3">
+<wire x1="34.9" y1="19.8" x2="34.9" y2="22.4" width="0.254" layer="1"/>
+</signal>
+<signal name="N$45">
+<wire x1="28.4" y1="19.6" x2="28.4" y2="22.5" width="0.254" layer="1"/>
+</signal>
 </signals>
 <errors>
 <approved hash="19,1,3d2c3150321a3e66"/>
@@ -3164,14 +3170,24 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <approved hash="19,1,444af036f1cc45b0"/>
 <approved hash="19,1,742c50505e047a78"/>
 <approved hash="19,1,3c4c303036423a3e"/>
+<approved hash="19,1,26b9a4b3ab68c2b7"/>
+<approved hash="19,1,4f64e92853d5a271"/>
+<approved hash="19,1,9e8fdfa6b1b2a773"/>
+<approved hash="19,1,252d6e11ecafed58"/>
+<approved hash="19,1,497794eee31517e0"/>
+<approved hash="19,1,2d11c3c5ca6e52ba"/>
+<approved hash="19,1,1c7ecf7466e9600a"/>
+<approved hash="19,1,5f7b6b1594e57562"/>
+<approved hash="19,1,15cb4949035f8561"/>
+<approved hash="19,1,4949c802c6d041a5"/>
 <approved hash="19,1,bc0af076f23cbe40"/>
 <approved hash="19,1,460bf277fc1e4862"/>
 <approved hash="19,1,778cb3f0b606727a"/>
 <approved hash="19,1,660cd270dc66681a"/>
 <approved hash="19,1,7c72500e52447e38"/>
-<approved hash="19,1,628cb6f0b43a6046"/>
-<approved hash="19,1,65dcb1a0ac02787e"/>
 <approved hash="19,1,6bacbfd0bc02687e"/>
+<approved hash="19,1,65dcb1a0ac02787e"/>
+<approved hash="19,1,628cb6f0b43a6046"/>
 <approved hash="19,16,628cb6f0b43a6046"/>
 <approved hash="19,16,6bacbfd0bc02687e"/>
 <approved hash="19,16,65dcb1a0ac02787e"/>
