@@ -340,8 +340,8 @@ UsedLibrary="/opt/eagle-6.3.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/opt/eagle-6.3.0/lbr/zetex.lbr"
 UsedLibrary="/opt/eagle-6.3.0/lbr/zilog.lbr"
 UsedLibrary="/home/natronics/eagle/blinky-lights/blinky-lights.lbr"
-UsedLibrary="ISS-Notify.lbr"
 UsedLibrary="/home/natronics/PSAS/FlightComputer/avionics-cad/libraries/rcl_custom.lbr"
+UsedLibrary="ISS-Notify.lbr"
 
 [Win_1]
 Type="Control Panel"

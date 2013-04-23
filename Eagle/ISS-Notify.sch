@@ -350,13 +350,13 @@ package type OT</description>
 </polygon>
 </package>
 <package name="JSTHEAD">
-<wire x1="-3" y1="-1.7" x2="3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.7" x2="3" y2="2.8" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.8" x2="-3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.8" x2="3" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-3" y1="-6" x2="3" y2="-6" width="0.127" layer="21"/>
+<wire x1="3" y1="-6" x2="3" y2="2" width="0.127" layer="21"/>
+<wire x1="-3" y1="2" x2="-3" y2="-6" width="0.127" layer="21"/>
+<wire x1="-3" y1="2" x2="3" y2="2" width="0.127" layer="21"/>
 <pad name="1" x="-1" y="0" drill="0.8"/>
 <pad name="2" x="1" y="0" drill="0.8" shape="square"/>
-<text x="-3" y="4" size="0.81" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="4" y="-4" size="0.8" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 </package>
 <package name="R-PDSO-G20">
 <smd name="1" x="-2.925" y="-2.8" dx="1.6" dy="0.3" layer="1" rot="R90"/>
@@ -7985,7 +7985,7 @@ DIN A3, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="U1" library="ISS-Notify" deviceset="ATMEGA32U4" device=""/>
-<part name="J1" library="ISS-Notify" deviceset="AVRISP" device=""/>
+<part name="AVRISP" library="ISS-Notify" deviceset="AVRISP" device=""/>
 <part name="USB" library="ISS-Notify" deviceset="CON_USB-MICRO-6GND" device=""/>
 <part name="U2" library="ISS-Notify" deviceset="MCP7940N" device=""/>
 <part name="U3" library="ISS-Notify" deviceset="TPS63001" device=""/>
@@ -8084,7 +8084,7 @@ DIN A3, landscape with location and doc. field</description>
 </plain>
 <instances>
 <instance part="U1" gate="ATMEGA" x="177.8" y="177.8"/>
-<instance part="J1" gate="G$1" x="187.96" y="119.38"/>
+<instance part="AVRISP" gate="G$1" x="187.96" y="119.38"/>
 <instance part="USB" gate="CF" x="43.18" y="119.38" rot="MR270"/>
 <instance part="U2" gate="G$1" x="287.02" y="228.6"/>
 <instance part="U3" gate="G$1" x="76.2" y="226.06"/>
@@ -8457,7 +8457,7 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="88.9" y="160.02"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="AVRISP" gate="G$1" pin="GND"/>
 <wire x1="195.58" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
@@ -8578,7 +8578,7 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="314.96" y="236.22"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="AVRISP" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="124.46" x2="231.14" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="231.14" y1="124.46" x2="231.14" y2="147.32" width="0.1524" layer="91"/>
@@ -8831,7 +8831,7 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="AVRISP" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="127" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U1" gate="ATMEGA" pin="MISO_PB3"/>
@@ -8841,7 +8841,7 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="AVRISP" gate="G$1" pin="4"/>
 <wire x1="195.58" y1="119.38" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="119.38" x2="215.9" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U1" gate="ATMEGA" pin="MOSI_PB2"/>
@@ -8854,7 +8854,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="U1" gate="ATMEGA" pin="SCLK_PB1"/>
 <wire x1="205.74" y1="154.94" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="154.94" x2="213.36" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="AVRISP" gate="G$1" pin="3"/>
 <wire x1="213.36" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
 <label x="198.12" y="121.92" size="1.778" layer="95"/>
 </segment>
@@ -9192,7 +9192,7 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
+<pinref part="AVRISP" gate="G$1" pin="5"/>
 <wire x1="195.58" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="116.84" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>

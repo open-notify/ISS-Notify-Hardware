@@ -95,7 +95,7 @@
 <wire x1="61.9" y1="29.1" x2="61.9" y2="54.1" width="0.254" layer="22"/>
 <wire x1="61.9" y1="54.1" x2="21.9" y2="54.1" width="0.254" layer="22"/>
 <wire x1="21.9" y1="54.1" x2="21.9" y2="29.1" width="0.254" layer="22"/>
-<text x="48.3" y="40.2" size="1.778" layer="22" rot="MR0">BATTERY</text>
+<text x="49.2" y="40.5" size="1.778" layer="22" rot="MR0">BATTERY</text>
 </plain>
 <libraries>
 <library name="ISS-Notify">
@@ -363,13 +363,13 @@ package type OT</description>
 </polygon>
 </package>
 <package name="JSTHEAD">
-<wire x1="-3" y1="-1.7" x2="3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.7" x2="3" y2="2.8" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.8" x2="-3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.8" x2="3" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-3" y1="-6" x2="3" y2="-6" width="0.127" layer="21"/>
+<wire x1="3" y1="-6" x2="3" y2="2" width="0.127" layer="21"/>
+<wire x1="-3" y1="2" x2="-3" y2="-6" width="0.127" layer="21"/>
+<wire x1="-3" y1="2" x2="3" y2="2" width="0.127" layer="21"/>
 <pad name="1" x="-1" y="0" drill="0.8"/>
 <pad name="2" x="1" y="0" drill="0.8" shape="square"/>
-<text x="-3" y="4" size="0.81" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="4" y="-4" size="0.8" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 </package>
 <package name="R-PDSO-G20">
 <smd name="1" x="-2.925" y="-2.8" dx="1.6" dy="0.3" layer="1" rot="R90"/>
@@ -1630,17 +1630,20 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="sunstone_eagle_2lyr_rules_v1.0.0.3">
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="LaenPCBOrder">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requirements for our double sided products. For questions, comments, suggestions, please contact Sunstone Customer Support  Email:  mailto:support@sunstone.com 
-Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance C/D.Restring%.Supply G%.&lt;p&gt; v1.2 Mod12/06/07~Distance C/D to 20mils.&lt;p&gt;v1.3Mod12/12/07~Supply/Annulus Value to 12.5mils&lt;p&gt;1/15/08 SSC-EAGLE-2Lyr_v1.0.0.3~For Release&lt;p&gt;
-
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-&lt;i&gt;Attention: Upon running the design check and making modifications, please remember to save any changes before closing the application and sending in your board file to Sunstone Circuits for conversion.&lt;i&gt;</description>
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.0178mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0178mm"/>
-<param name="mtIsolate" value="59mil 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -1652,12 +1655,12 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="20mil"/>
-<param name="mdDrill" value="16mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="14mil"/>
-<param name="msMicroVia" value="9.9898mm"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -1666,20 +1669,20 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="8mil"/>
-<param name="rlMaxPadTop" value="999mil"/>
-<param name="rlMinPadInner" value="0mil"/>
-<param name="rlMaxPadInner" value="0mil"/>
-<param name="rlMinPadBottom" value="8mil"/>
-<param name="rlMaxPadBottom" value="999mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
-<param name="rlMaxViaOuter" value="999mil"/>
-<param name="rlMinViaInner" value="0mil"/>
-<param name="rlMaxViaInner" value="0mil"/>
-<param name="rlMinMicroViaOuter" value="8mil"/>
-<param name="rlMaxMicroViaOuter" value="999mil"/>
-<param name="rlMinMicroViaInner" value="0mil"/>
-<param name="rlMaxMicroViaInner" value="0mil"/>
+<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
@@ -1687,8 +1690,8 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
@@ -1704,7 +1707,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
-<param name="maxErrors" value="500"/>
+<param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
@@ -1803,8 +1806,8 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <element name="U1" library="ISS-Notify" package="TQFP-44" value="ATMEGA32U4" x="31.75" y="31.75" smashed="yes">
 <attribute name="NAME" x="31.1" y="33.035" size="0.8" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="J1" library="ISS-Notify" package="AVRISP" value="AVRISP" x="12.684" y="31.35" smashed="yes" rot="MR0">
-<attribute name="NAME" x="17.684" y="28.35" size="1.27" layer="22" font="vector" ratio="20" rot="MR90"/>
+<element name="AVRISP" library="ISS-Notify" package="AVRISP" value="AVRISP" x="12.684" y="31.35" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.184" y="29.35" size="1.27" layer="22" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="USB" library="ISS-Notify" package="USBMICROSMT" value="CON_USB-MICRO-6GND" x="1.47" y="17.78" smashed="yes" rot="R270"/>
 <element name="U2" library="ISS-Notify" package="MCP7940N" value="MCP7940N" x="44.45" y="8.844" smashed="yes">
@@ -1910,10 +1913,10 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <attribute name="NAME" x="54.224" y="42.782" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="55.774" y="44.782" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="D1" library="ISS-Notify" package="MBR120" value="DIODE" x="47.81" y="58.55" smashed="yes" rot="R90"/>
+<element name="D1" library="ISS-Notify" package="MBR120" value="DIODE" x="47.81" y="57.45" smashed="yes" rot="R90"/>
 <element name="D2" library="ISS-Notify" package="MBR120" value="DIODE" x="52.678" y="7.804" smashed="yes"/>
-<element name="J2" library="ISS-Notify" package="JSTHEAD" value="JST2" x="52.07" y="58.42" smashed="yes" rot="MR270">
-<attribute name="NAME" x="55.07" y="59.12" size="0.81" layer="26" font="vector" ratio="20" rot="MR270"/>
+<element name="J2" library="ISS-Notify" package="JSTHEAD" value="JST2" x="52.03" y="58.38" smashed="yes" rot="MR90">
+<attribute name="NAME" x="44.82" y="57.73" size="0.8" layer="26" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="U5" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="38.1" y="48.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.3" y="52.06" size="0.8128" layer="21" font="vector" ratio="20"/>
@@ -2073,7 +2076,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <contactref element="C6" pad="2"/>
 <contactref element="U4" pad="2"/>
 <contactref element="R6" pad="1"/>
-<contactref element="J1" pad="GND"/>
+<contactref element="AVRISP" pad="GND"/>
 <contactref element="J2" pad="2"/>
 <contactref element="U5" pad="2"/>
 <contactref element="U5" pad="PAD"/>
@@ -2135,14 +2138,14 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <via x="46.1" y="50.8" extent="1-16" drill="0.36"/>
 <via x="25.7" y="48.9" extent="1-16" drill="0.36"/>
 <via x="27.4" y="42.7" extent="1-16" drill="0.36"/>
-<via x="37.7" y="41.3" extent="1-16" drill="0.36"/>
+<via x="37.3" y="41.1" extent="1-16" drill="0.36"/>
 <via x="19.4" y="34.9" extent="1-16" drill="0.36"/>
 <via x="7" y="22.6" extent="1-16" drill="0.36"/>
 <via x="6.1" y="11.2" extent="1-16" drill="0.36"/>
 <via x="38.1" y="48.3" extent="1-16" drill="0.36"/>
-<via x="53.4" y="55.4" extent="1-16" drill="0.36"/>
-<via x="54.2" y="56.8" extent="1-16" drill="0.36"/>
-<via x="49.6" y="58.3" extent="1-16" drill="0.36"/>
+<via x="57.1" y="54.8" extent="1-16" drill="0.36"/>
+<via x="54.1" y="59.4" extent="1-16" drill="0.36"/>
+<via x="52.1" y="61.6" extent="1-16" drill="0.36"/>
 <via x="42.3" y="60.8" extent="1-16" drill="0.36"/>
 <via x="18" y="57.1" extent="1-16" drill="0.36"/>
 <wire x1="18" y1="57.1" x2="17.6" y2="57.1" width="0.254" layer="1"/>
@@ -2205,7 +2208,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <contactref element="C13" pad="1"/>
 <contactref element="U2" pad="8"/>
 <contactref element="C7" pad="1"/>
-<contactref element="J1" pad="2"/>
+<contactref element="AVRISP" pad="2"/>
 <contactref element="U5" pad="19"/>
 <contactref element="U5" pad="20"/>
 <contactref element="C14" pad="1"/>
@@ -2541,17 +2544,12 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="31.7" y1="53.8" x2="35.7" y2="53.8" width="0.6096" layer="1"/>
 <wire x1="35.7" y1="53.8" x2="37.6" y2="55.7" width="0.6096" layer="1"/>
 <via x="37.6" y="55.7" extent="1-16" drill="0.36"/>
-<wire x1="37.6" y1="55.7" x2="43" y2="55.7" width="0.6096" layer="16"/>
-<wire x1="43" y1="55.7" x2="44" y2="56.7" width="0.6096" layer="16"/>
-<via x="44" y="56.7" extent="1-16" drill="0.36"/>
-<wire x1="44" y1="56.7" x2="47.76" y2="56.7" width="0.6096" layer="1"/>
-<wire x1="47.76" y1="56.7" x2="47.81" y2="56.75" width="0.6096" layer="1"/>
+<wire x1="37.6" y1="55.7" x2="44.1" y2="55.7" width="0.6096" layer="16"/>
+<via x="44.1" y="55.7" extent="1-16" drill="0.36"/>
 <wire x1="53.818" y1="49.718" x2="53.818" y2="49.982" width="0.254" layer="1"/>
 <wire x1="53.818" y1="49.982" x2="53.8" y2="50" width="0.254" layer="1"/>
 <wire x1="53.8" y1="50" x2="53.8" y2="52.3" width="0.6096" layer="1"/>
-<wire x1="53.8" y1="52.3" x2="49.4" y2="56.7" width="0.6096" layer="1"/>
-<wire x1="49.4" y1="56.7" x2="47.86" y2="56.7" width="0.6096" layer="1"/>
-<wire x1="47.86" y1="56.7" x2="47.81" y2="56.75" width="0.6096" layer="1"/>
+<wire x1="53.8" y1="52.3" x2="50.4" y2="55.7" width="0.6096" layer="1"/>
 <wire x1="56.418" y1="47.818" x2="56.418" y2="46.418" width="0.254" layer="1"/>
 <wire x1="56.418" y1="46.418" x2="55.6" y2="45.6" width="0.254" layer="1"/>
 <wire x1="55.6" y1="45.6" x2="52.9" y2="45.6" width="0.254" layer="1"/>
@@ -2560,6 +2558,10 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="52.5" y1="49.2" x2="53" y2="49.7" width="0.254" layer="1"/>
 <wire x1="53" y1="49.7" x2="53.8" y2="49.7" width="0.254" layer="1"/>
 <wire x1="53.8" y1="49.7" x2="53.818" y2="49.718" width="0.254" layer="1"/>
+<wire x1="44.1" y1="55.7" x2="47.3" y2="55.7" width="0.6096" layer="1"/>
+<wire x1="47.3" y1="55.7" x2="47.81" y2="55.7" width="0.6096" layer="1"/>
+<wire x1="47.81" y1="55.7" x2="47.81" y2="55.65" width="0.6096" layer="1"/>
+<wire x1="50.4" y1="55.7" x2="47.81" y2="55.7" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U4" pad="5"/>
@@ -2570,17 +2572,16 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <contactref element="U4" pad="3"/>
 <contactref element="D1" pad="A"/>
 <contactref element="J2" pad="1"/>
-<wire x1="52.07" y1="59.42" x2="53.78" y2="59.42" width="0.6096" layer="1"/>
-<wire x1="53.78" y1="59.42" x2="55.7" y2="57.5" width="0.6096" layer="1"/>
-<wire x1="55.7" y1="57.5" x2="55.7" y2="52.2" width="0.6096" layer="1"/>
 <wire x1="55.7" y1="52.2" x2="56.4" y2="51.5" width="0.6096" layer="1"/>
 <wire x1="56.4" y1="51.5" x2="56.4" y2="49.736" width="0.6096" layer="1"/>
 <wire x1="56.4" y1="49.736" x2="56.418" y2="49.718" width="0.6096" layer="1"/>
-<wire x1="52.04" y1="59.39" x2="52.07" y2="59.42" width="0.6096" layer="1"/>
-<wire x1="52.04" y1="59.39" x2="50.71" y2="59.39" width="0.6096" layer="1"/>
-<wire x1="50.71" y1="59.39" x2="49.8" y2="60.3" width="0.6096" layer="1"/>
-<wire x1="49.8" y1="60.3" x2="47.86" y2="60.3" width="0.6096" layer="1"/>
-<wire x1="47.86" y1="60.3" x2="47.81" y2="60.35" width="0.6096" layer="1"/>
+<wire x1="52.03" y1="57.38" x2="52.12" y2="57.38" width="0.6096" layer="1"/>
+<wire x1="52.12" y1="57.38" x2="55.7" y2="53.8" width="0.6096" layer="1"/>
+<wire x1="55.7" y1="53.8" x2="55.7" y2="52.2" width="0.6096" layer="1"/>
+<wire x1="52.03" y1="57.38" x2="50.92" y2="57.38" width="0.6096" layer="1"/>
+<wire x1="50.92" y1="57.38" x2="49.1" y2="59.2" width="0.6096" layer="1"/>
+<wire x1="49.1" y1="59.2" x2="47.86" y2="59.2" width="0.6096" layer="1"/>
+<wire x1="47.86" y1="59.2" x2="47.81" y2="59.25" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="D2" pad="C"/>
@@ -2594,7 +2595,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="48.498" y1="7.804" x2="48.36" y2="7.766" width="0.4064" layer="1"/>
 </signal>
 <signal name="MISO">
-<contactref element="J1" pad="1"/>
+<contactref element="AVRISP" pad="1"/>
 <contactref element="U1" pad="11"/>
 <wire x1="25.75" y1="27.75" x2="25.7" y2="27.8" width="0.254" layer="1"/>
 <wire x1="25.7" y1="27.8" x2="24.5" y2="27.8" width="0.254" layer="1"/>
@@ -2607,7 +2608,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="15.81" y1="33.89" x2="13.954" y2="33.89" width="0.254" layer="16"/>
 </signal>
 <signal name="MOSI">
-<contactref element="J1" pad="4"/>
+<contactref element="AVRISP" pad="4"/>
 <contactref element="U1" pad="10"/>
 <wire x1="25.75" y1="28.55" x2="25.3" y2="28.6" width="0.254" layer="1"/>
 <wire x1="16.7" y1="30.1" x2="12.7" y2="30.1" width="0.254" layer="1"/>
@@ -2620,7 +2621,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 </signal>
 <signal name="SCLK">
 <contactref element="U1" pad="9"/>
-<contactref element="J1" pad="3"/>
+<contactref element="AVRISP" pad="3"/>
 <wire x1="25.75" y1="29.35" x2="25.7" y2="29.4" width="0.254" layer="1"/>
 <wire x1="25.7" y1="29.4" x2="18.7" y2="29.4" width="0.254" layer="1"/>
 <wire x1="18.7" y1="29.4" x2="16.75" y2="31.35" width="0.254" layer="1"/>
@@ -3134,7 +3135,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="38" y1="37" x2="38" y2="38.416" width="0.254" layer="1"/>
 </signal>
 <signal name="RESET">
-<contactref element="J1" pad="5"/>
+<contactref element="AVRISP" pad="5"/>
 <contactref element="U1" pad="13"/>
 <contactref element="SW2" pad="1"/>
 <wire x1="21" y1="27" x2="21.7" y2="26.3" width="0.254" layer="1"/>
@@ -3202,12 +3203,12 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 </signal>
 </signals>
 <errors>
-<approved hash="19,1,3d2c3150321a3e66"/>
-<approved hash="19,1,74b1b0cdb6bc72c0"/>
-<approved hash="19,1,74d1b0adbef47a88"/>
-<approved hash="19,1,444af036f1cc45b0"/>
-<approved hash="19,1,742c50505e047a78"/>
-<approved hash="19,1,3c4c303036423a3e"/>
+<approved hash="19,1,ccb06a3e678ec100"/>
+<approved hash="19,1,ac188e968abea830"/>
+<approved hash="19,1,ac5c8ed2817ea3f0"/>
+<approved hash="19,1,6b19f997864614c8"/>
+<approved hash="19,1,0ca02e2e218e0300"/>
+<approved hash="19,1,fce4126a164ef8c0"/>
 <approved hash="19,1,26b9a4b3ab68c2b7"/>
 <approved hash="19,1,4f64e92853d5a271"/>
 <approved hash="19,1,9e8fdfa6b1b2a773"/>
@@ -3218,17 +3219,17 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <approved hash="19,1,5f7b6b1594e57562"/>
 <approved hash="19,1,15cb4949035f8561"/>
 <approved hash="19,1,4949c802c6d041a5"/>
-<approved hash="19,1,bc0af076f23cbe40"/>
-<approved hash="19,1,460bf277fc1e4862"/>
-<approved hash="19,1,778cb3f0b606727a"/>
-<approved hash="19,1,660cd270dc66681a"/>
-<approved hash="19,1,7c72500e52447e38"/>
-<approved hash="19,1,6bacbfd0bc02687e"/>
-<approved hash="19,1,65dcb1a0ac02787e"/>
-<approved hash="19,1,628cb6f0b43a6046"/>
-<approved hash="19,16,628cb6f0b43a6046"/>
-<approved hash="19,16,6bacbfd0bc02687e"/>
-<approved hash="19,16,65dcb1a0ac02787e"/>
+<approved hash="19,1,fc71d2ffd3e6fd68"/>
+<approved hash="19,1,6058f2d6f2a3602d"/>
+<approved hash="19,1,ac4f8ec1882aaaa4"/>
+<approved hash="19,1,8027b2a9b2da8054"/>
+<approved hash="19,1,2c0cca82cb9e2d10"/>
+<approved hash="19,1,a0059a8b9a22a0ac"/>
+<approved hash="19,1,ac9d96138ab2b03c"/>
+<approved hash="19,1,ab7191ff92e2a86c"/>
+<approved hash="19,16,ac9d96138ab2b03c"/>
+<approved hash="19,16,ab7191ff92e2a86c"/>
+<approved hash="19,16,a0059a8b9a22a0ac"/>
 </errors>
 </board>
 </drawing>
