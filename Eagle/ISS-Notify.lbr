@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -619,6 +619,9 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <wire x1="-5" y1="2" x2="5" y2="2" width="0.127" layer="21"/>
 <wire x1="7" y1="2" x2="7" y2="-4.5" width="0.127" layer="21"/>
 </package>
+<package name="TESTPIN">
+<pad name="P$1" x="0" y="0" drill="0.8" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -952,6 +955,14 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="TESTPIN">
+<pin name="TEST" x="0" y="0" visible="off" length="middle" rot="R90"/>
+<wire x1="0" y1="5.08" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="1.016" y2="11.43" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="-1.016" y2="11.43" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="5.842" x2="0.508" y2="5.842" width="0.254" layer="94"/>
+<text x="3.048" y="5.334" size="1.27" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1382,6 +1393,23 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <connect gate="1" pin="O" pad="1"/>
 <connect gate="1" pin="P" pad="2"/>
 <connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPIN" prefix="TEST">
+<description>&lt;h1&gt;Pogo Pin&lt;/h1&gt;
+Test pin hole</description>
+<gates>
+<gate name="G$1" symbol="TESTPIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TESTPIN">
+<connects>
+<connect gate="G$1" pin="TEST" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
