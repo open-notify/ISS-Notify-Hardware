@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8051,7 +8051,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="D2" library="ISS-Notify" deviceset="DIODE" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="J2" library="ISS-Notify" deviceset="JST2" device=""/>
+<part name="LIPO" library="ISS-Notify" deviceset="JST2" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="U5" library="ISS-Notify" deviceset="TLC5971" device=""/>
 <part name="U6" library="ISS-Notify" deviceset="TLC5971" device=""/>
@@ -8078,7 +8078,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device="" value="ISS Notify"/>
-<part name="SW2" library="ISS-Notify" deviceset="SWITCH" device=""/>
+<part name="RESET" library="ISS-Notify" deviceset="SWITCH" device=""/>
 <part name="U$1" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="U$2" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="U$3" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
@@ -8184,7 +8184,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="D2" gate="G$1" x="261.62" y="210.82"/>
 <instance part="P+4" gate="VCC" x="231.14" y="149.86"/>
 <instance part="GND16" gate="1" x="198.12" y="111.76"/>
-<instance part="J2" gate="G$1" x="106.68" y="170.18" rot="MR0"/>
+<instance part="LIPO" gate="G$1" x="106.68" y="170.18" rot="MR0"/>
 <instance part="GND17" gate="1" x="104.14" y="142.24"/>
 <instance part="U5" gate="G$1" x="111.76" y="48.26"/>
 <instance part="U6" gate="G$1" x="236.22" y="48.26"/>
@@ -8211,7 +8211,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND22" gate="1" x="299.72" y="109.22"/>
 <instance part="P+9" gate="VCC" x="299.72" y="157.48"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="SW2" gate="G$1" x="157.48" y="121.92" rot="MR0"/>
+<instance part="RESET" gate="G$1" x="157.48" y="121.92" rot="MR0"/>
 <instance part="U$1" gate="MT" x="22.86" y="58.42"/>
 <instance part="U$2" gate="MT" x="22.86" y="50.8"/>
 <instance part="U$3" gate="MT" x="22.86" y="43.18"/>
@@ -8388,7 +8388,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="U1" gate="ATMEGA" pin="GND@2"/>
 <wire x1="149.86" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 <junction x="147.32" y="152.4"/>
-<pinref part="SW2" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="121.92" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
 <junction x="147.32" y="121.92"/>
 </segment>
@@ -8479,7 +8479,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="LIPO" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="170.18" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="C17" gate="CE" pin="2"/>
@@ -8839,7 +8839,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="86.36" y1="172.72" x2="86.36" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="86.36" y1="185.42" x2="71.12" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="LIPO" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="172.72" x2="93.98" y2="172.72" width="0.1524" layer="91"/>
 <junction x="86.36" y="172.72"/>
 <label x="88.9" y="172.72" size="1.778" layer="95"/>
@@ -9234,7 +9234,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="147.32" y1="180.34" x2="147.32" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U1" gate="ATMEGA" pin="RESET"/>
 <wire x1="147.32" y1="182.88" x2="149.86" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="1"/>
+<pinref part="RESET" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="121.92" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
 <junction x="162.56" y="109.22"/>
 <label x="198.12" y="116.84" size="1.778" layer="95"/>

@@ -98,6 +98,7 @@
 <text x="49.2" y="40.5" size="1.778" layer="22" rot="MR0">BATTERY</text>
 <text x="7.1" y="53.5" size="1.778" layer="22" rot="MR0">ON</text>
 <text x="8.5" y="36.4" size="1.778" layer="22" rot="MR0">OFF</text>
+<text x="44.6" y="55.9" size="1.27" layer="26" font="vector" ratio="20">+</text>
 </plain>
 <libraries>
 <library name="ISS-Notify">
@@ -1933,8 +1934,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D2" library="ISS-Notify" package="0805-DIODE" value="DIODE" x="52.678" y="7.804" smashed="yes">
 <attribute name="NAME" x="52.078" y="5.704" size="0.8" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="J2" library="ISS-Notify" package="JSTHEAD" value="JST2" x="52.03" y="58.38" smashed="yes" rot="MR90">
-<attribute name="NAME" x="44.82" y="57.73" size="0.8" layer="26" font="vector" ratio="20" rot="MR90"/>
+<element name="LIPO" library="ISS-Notify" package="JSTHEAD" value="JST2" x="52.03" y="58.38" smashed="yes" rot="MR90">
+<attribute name="NAME" x="42.02" y="56.03" size="1.27" layer="26" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="U5" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="38.1" y="48.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.3" y="52.06" size="0.8128" layer="21" font="vector" ratio="20"/>
@@ -1980,8 +1981,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="21.876" y="8.42" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="J3" library="ISS-Notify" package="PROTOSPACE2" value="PROTOSPACE2" x="31.75" y="61.06" smashed="yes"/>
-<element name="SW2" library="ISS-Notify" package="SWITCH" value="SWITCH" x="13.192" y="6.036" smashed="yes" rot="MR270">
-<attribute name="NAME" x="8.308" y="6.264" size="1.27" layer="26" rot="MR90"/>
+<element name="RESET" library="ISS-Notify" package="SWITCH" value="SWITCH" x="13.192" y="6.036" smashed="yes" rot="MR270">
+<attribute name="NAME" x="17.008" y="3.364" size="1.27" layer="26" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="U$1" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="59.69" smashed="yes">
 <attribute name="VALUE" x="6.985" y="56.515" size="1.27" layer="27"/>
@@ -2075,7 +2076,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U1" pad="43"/>
 <contactref element="U1" pad="35"/>
 <contactref element="U1" pad="23"/>
-<contactref element="SW2" pad="3"/>
+<contactref element="RESET" pad="3"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C2" pad="2"/>
@@ -2095,7 +2096,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U4" pad="2"/>
 <contactref element="R6" pad="1"/>
 <contactref element="AVRISP" pad="GND"/>
-<contactref element="J2" pad="2"/>
+<contactref element="LIPO" pad="2"/>
 <contactref element="U5" pad="2"/>
 <contactref element="U5" pad="PAD"/>
 <contactref element="R7" pad="1"/>
@@ -2592,7 +2593,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="VBAT">
 <contactref element="U4" pad="3"/>
 <contactref element="D1" pad="A"/>
-<contactref element="J2" pad="1"/>
+<contactref element="LIPO" pad="1"/>
 <wire x1="55.7" y1="52.2" x2="56.4" y2="51.5" width="0.6096" layer="1"/>
 <wire x1="56.4" y1="51.5" x2="56.4" y2="49.736" width="0.6096" layer="1"/>
 <wire x1="56.4" y1="49.736" x2="56.418" y2="49.718" width="0.6096" layer="1"/>
@@ -3163,7 +3164,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="RESET">
 <contactref element="AVRISP" pad="5"/>
 <contactref element="U1" pad="13"/>
-<contactref element="SW2" pad="1"/>
+<contactref element="RESET" pad="1"/>
 <wire x1="21" y1="27" x2="21.7" y2="26.3" width="0.254" layer="1"/>
 <wire x1="21.7" y1="26.3" x2="21.7" y2="24" width="0.254" layer="1"/>
 <wire x1="21.7" y1="24" x2="22.4" y2="23.3" width="0.254" layer="1"/>
