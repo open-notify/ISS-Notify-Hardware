@@ -2003,7 +2003,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="48.71" y="9.866" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="50.36" y="7.666" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="U$5" library="ISS-Notify" package="LOGO" value="V0.3" x="40.7" y="35.5"/>
+<element name="U$5" library="ISS-Notify" package="LOGO" value="V0.4" x="40.7" y="35.5"/>
 <element name="C17" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="47.2" y="60.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="51" y="61.15" size="0.8" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="48" y="62.5" size="1" layer="27" ratio="10" rot="R180"/>

@@ -8112,7 +8112,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="U$3" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="U$4" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
-<part name="U$5" library="ISS-Notify" deviceset="LOGO" device="" value="V0.3"/>
+<part name="U$5" library="ISS-Notify" deviceset="LOGO" device="" value="V0.4"/>
 <part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
 <part name="TESTVBAT" library="ISS-Notify" deviceset="TESTPIN" device=""/>
 <part name="TESTSCL" library="ISS-Notify" deviceset="TESTPIN" device=""/>
