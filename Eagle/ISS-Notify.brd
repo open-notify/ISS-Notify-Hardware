@@ -451,13 +451,13 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <pad name="3" x="0" y="0" drill="1"/>
 <pad name="4" x="2.54" y="0" drill="1"/>
 <pad name="ISS" x="5.08" y="0" drill="1"/>
-<text x="-6.985" y="-6.35" size="1.27" layer="21" rot="R90">3.3 V</text>
-<text x="-4.445" y="-2.54" size="1.27" layer="21" rot="R90">1</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="21" rot="R90">2</text>
-<text x="0.635" y="-2.54" size="1.27" layer="21" rot="R90">3</text>
-<text x="3.175" y="-2.54" size="1.27" layer="21" rot="R90">4</text>
-<text x="5.715" y="-4.445" size="1.27" layer="21" rot="R90">ISS</text>
-<text x="8.255" y="-5.715" size="1.27" layer="21" rot="R90">GND</text>
+<text x="-6.885" y="-5.65" size="1.27" layer="21" font="vector" rot="R90">3.3V</text>
+<text x="-4.445" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">1</text>
+<text x="-1.905" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">2</text>
+<text x="0.635" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">3</text>
+<text x="3.175" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">4</text>
+<text x="5.715" y="-4.545" size="1.27" layer="21" font="vector" rot="R90">ISS</text>
+<text x="8.255" y="-4.915" size="1.27" layer="21" font="vector" rot="R90">GND</text>
 <wire x1="-8.89" y1="1.27" x2="8.89" y2="1.27" width="0.127" layer="21"/>
 <wire x1="8.89" y1="1.27" x2="8.89" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-1.27" x2="-8.89" y2="-1.27" width="0.127" layer="21"/>
@@ -3237,8 +3237,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,ac4f8ec1882aaaa4"/>
 <approved hash="19,1,8027b2a9b2da8054"/>
 <approved hash="19,1,2c0cca82cb9e2d10"/>
-<approved hash="19,1,a0059a8b9a22a0ac"/>
 <approved hash="19,1,ab7191ff92e2a86c"/>
+<approved hash="19,1,a0059a8b9a22a0ac"/>
 <approved hash="19,1,ac9d96138ab2b03c"/>
 <approved hash="19,16,ac9d96138ab2b03c"/>
 <approved hash="19,16,ab7191ff92e2a86c"/>
