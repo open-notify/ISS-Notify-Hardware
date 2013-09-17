@@ -580,6 +580,9 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <vertex x="4.6" y="4.3"/>
 </polygon>
 </package>
+<package name="TESTPIN">
+<pad name="P$1" x="0" y="0" drill="0.8" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -913,6 +916,14 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <symbol name="LOGO">
 <text x="0" y="0" size="1.778" layer="94">ISS LOGO</text>
 <text x="0" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="TESTPIN">
+<pin name="TEST" x="0" y="0" visible="off" length="middle" rot="R90"/>
+<wire x1="0" y1="5.08" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="1.016" y2="11.43" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="-1.016" y2="11.43" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="5.842" x2="0.508" y2="5.842" width="0.254" layer="94"/>
+<text x="3.048" y="5.334" size="1.27" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1344,6 +1355,23 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </gates>
 <devices>
 <device name="" package="LOGO">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPIN" prefix="TEST">
+<description>&lt;h1&gt;Pogo Pin&lt;/h1&gt;
+Test pin hole</description>
+<gates>
+<gate name="G$1" symbol="TESTPIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TESTPIN">
+<connects>
+<connect gate="G$1" pin="TEST" pad="P$1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8086,6 +8114,13 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="U$5" library="ISS-Notify" deviceset="LOGO" device="" value="V0.3"/>
 <part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
+<part name="TESTVBAT" library="ISS-Notify" deviceset="TESTPIN" device=""/>
+<part name="TESTSCL" library="ISS-Notify" deviceset="TESTPIN" device=""/>
+<part name="TESTSDC" library="ISS-Notify" deviceset="TESTPIN" device=""/>
+<part name="TESTDATA" library="ISS-Notify" deviceset="TESTPIN" device=""/>
+<part name="TESTCLOCK" library="ISS-Notify" deviceset="TESTPIN" device=""/>
+<part name="TESTGND" library="ISS-Notify" deviceset="TESTPIN" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8222,6 +8257,13 @@ DIN A3, landscape with location and doc. field</description>
 </instance>
 <instance part="U$5" gate="G$1" x="22.86" y="22.86"/>
 <instance part="C17" gate="CE" x="93.98" y="170.18"/>
+<instance part="TESTVBAT" gate="G$1" x="99.06" y="177.8"/>
+<instance part="TESTSCL" gate="G$1" x="327.66" y="172.72"/>
+<instance part="TESTSDC" gate="G$1" x="332.74" y="172.72"/>
+<instance part="TESTDATA" gate="G$1" x="48.26" y="73.66"/>
+<instance part="TESTCLOCK" gate="G$1" x="53.34" y="73.66"/>
+<instance part="TESTGND" gate="G$1" x="340.36" y="68.58"/>
+<instance part="GND23" gate="1" x="340.36" y="63.5"/>
 </instances>
 <busses>
 <bus name="D+,D-">
@@ -8535,6 +8577,11 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="45.72" y1="144.78" x2="45.72" y2="165.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND23" gate="1" pin="GND"/>
+<pinref part="TESTGND" gate="G$1" pin="TEST"/>
+<wire x1="340.36" y1="66.04" x2="340.36" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -8763,6 +8810,10 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="215.9" y1="167.64" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
 <label x="210.82" y="167.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TESTSCL" gate="G$1" pin="TEST"/>
+<wire x1="304.8" y1="172.72" x2="327.66" y2="172.72" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -8775,6 +8826,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="215.9" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
 <label x="210.82" y="170.18" size="1.778" layer="95"/>
 <pinref part="U1" gate="ATMEGA" pin="INT1_SDA_PD1"/>
+</segment>
+<segment>
+<pinref part="TESTSDC" gate="G$1" pin="TEST"/>
+<wire x1="304.8" y1="170.18" x2="332.74" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="170.18" x2="332.74" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8844,8 +8900,12 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="86.36" y="172.72"/>
 <label x="88.9" y="172.72" size="1.778" layer="95"/>
 <pinref part="C17" gate="CE" pin="1"/>
-<wire x1="93.98" y1="172.72" x2="104.14" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="172.72" x2="99.06" y2="172.72" width="0.1524" layer="91"/>
 <junction x="93.98" y="172.72"/>
+<pinref part="TESTVBAT" gate="G$1" pin="TEST"/>
+<wire x1="99.06" y1="172.72" x2="104.14" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="172.72" x2="99.06" y2="177.8" width="0.1524" layer="91"/>
+<junction x="99.06" y="172.72"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -8926,6 +8986,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="226.06" y1="213.36" x2="205.74" y2="213.36" width="0.1524" layer="91"/>
 <label x="208.28" y="213.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TESTDATA" gate="G$1" pin="TEST"/>
+<wire x1="68.58" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="71.12" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="LED_CLK" class="0">
 <segment>
@@ -8939,6 +9004,10 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="U1" gate="ATMEGA" pin="ADC0_PF0"/>
 <wire x1="226.06" y1="215.9" x2="205.74" y2="215.9" width="0.1524" layer="91"/>
 <label x="208.28" y="215.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TESTCLOCK" gate="G$1" pin="TEST"/>
+<wire x1="68.58" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
