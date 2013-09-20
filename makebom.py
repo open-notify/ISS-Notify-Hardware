@@ -50,7 +50,7 @@ title: ISS Notify -- Hardware Documentation | BOM
         grand_total += total
         cells = (num, item['part'], item['desc'], item['digikey'], item['digilink'], price, total)
 
-        f.write('| %d | %s | %s | "%s":%s | $%0.2f | $%0.2f |\n' % cells)
+        f.write('| %d | %s | %s | [%s](%s) | $%0.2f | $%0.2f |\n' % cells)
 
     f.write('| Total: | | | | | $%0.2f |\n' % (grand_total))
     f.write("""
