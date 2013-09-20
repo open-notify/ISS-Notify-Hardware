@@ -1,3 +1,6 @@
+exclude: [makebom.py]
+pygments: true
+
 navigation:
 - text: Home
   url: /
@@ -14,5 +17,5 @@ hardlinks:
    url: /ISS-Notify-Hardware
    name: harddocs
  - text: Bill of Materials
-   url: /ISS-Notify-Hardware/bom
-   name: bom
+   url: /ISS-Notify-Hardware/BOM
+   name: BOM

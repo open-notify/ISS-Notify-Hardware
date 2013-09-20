@@ -19,7 +19,7 @@ with open(sys.argv[1], 'r') as digikey:
         digilink = "http://www.digikey.com/product-detail/en/%s/%s/" % (manuf_part, digikey_part)
         bom.append({'n': num, 'part': part, 'desc':  manuf_part+" "+desc.title(), 'digikey': digikey_part, 'digilink': digilink, 'price': price})
 
-with open("ISS-Notify-BOM.csv", 'w') as csv:
+with open("BOM/ISS-Notify-BOM.csv", 'w') as csv:
     csv.write("#num, name, desc, digikey part, price, line amount\n")
     for item in bom:
         num = item['n']
@@ -29,17 +29,18 @@ with open("ISS-Notify-BOM.csv", 'w') as csv:
         csv.write('%d,%s,%s,%s,%0.2f,%0.2f\n' % cells)
 
 
-with open("bom.textile", 'w') as f:
+with open("BOM/index.markdown", 'w') as f:
     f.write("""---
 layout: harddoc
-name: bom
+name: BOM
 title: ISS Notify -- Hardware Documentation | BOM
 ---
 
-h1. Bill Of Materials
+# Bill Of Materials
 
-table(table table-striped).
-|_. # |_. Part No. |_. Item |_. Order No. |_. Price |_. Total |
+{: .table .table-hover}
+ \#   | Part No. | Item | Order No. | Price | Total
+ ---- | -------- | ---- | --------- | ----- | -----
 """)
     grand_total = 0
     for item in bom:
@@ -49,12 +50,12 @@ table(table table-striped).
         grand_total += total
         cells = (num, item['part'], item['desc'], item['digikey'], item['digilink'], price, total)
 
-        f.write('| %d | %s | %s | "%s":%s |>. $%0.2f |>. $%0.2f |\n' % cells)
+        f.write('| %d | %s | %s | "%s":%s | $%0.2f | $%0.2f |\n' % cells)
 
-    f.write('|_. Total: | | | | |>. $%0.2f |\n' % (grand_total))
+    f.write('| Total: | | | | | $%0.2f |\n' % (grand_total))
     f.write("""
 
-h3. Download BOM
+### Download BOM
 
- * "ISS-Notify-BOM.csv":/ISS-Notify-Hardware/ISS-Notify-BOM.csv
+ - [ISS-Notify-BOM.csv](/ISS-Notify-Hardware/BOM/ISS-Notify-BOM.csv)
 """)
