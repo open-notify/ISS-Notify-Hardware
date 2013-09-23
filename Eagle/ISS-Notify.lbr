@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -447,19 +447,17 @@ Note, this outline does not include nut-tool clearance, for that use at least th
 Includes 0.250" outline for standard #4 washer.
 For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4" is a good choice for a screw head + standard washer, but will not provide enough room for a standard nut to turn.</description>
 <circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
-<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="3.175" width="0" layer="39"/>
-<circle x="0" y="0" radius="3.175" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
 <circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
-<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
-<circle x="0" y="0" radius="3.175" width="0" layer="41"/>
-<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
+<circle x="0" y="0" radius="2.54" width="0" layer="41"/>
 <text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
 <text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
 <text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="0" y="0" drill="3.175"/>
 <hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="42"/>
 </package>
 <package name="_4/.300-BARE+STD_NUT_OR_STAR_WASHER">
 <description>1/8" hole without plating for #4 screw&lt;br&gt;

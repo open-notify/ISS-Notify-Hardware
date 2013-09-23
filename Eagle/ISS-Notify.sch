@@ -477,19 +477,17 @@ Note, this outline does not include nut-tool clearance, for that use at least th
 Includes 0.250" outline for standard #4 washer.
 For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4" is a good choice for a screw head + standard washer, but will not provide enough room for a standard nut to turn.</description>
 <circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
-<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="3.175" width="0" layer="39"/>
-<circle x="0" y="0" radius="3.175" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
 <circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
-<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
-<circle x="0" y="0" radius="3.175" width="0" layer="41"/>
-<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
+<circle x="0" y="0" radius="2.54" width="0" layer="41"/>
 <text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
 <text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
 <text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="0" y="0" drill="3.175"/>
 <hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="42"/>
 </package>
 <package name="_4/.300-BARE+STD_NUT_OR_STAR_WASHER">
 <description>1/8" hole without plating for #4 screw&lt;br&gt;
@@ -8107,10 +8105,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device="" value="ISS Notify"/>
 <part name="RESET" library="ISS-Notify" deviceset="SWITCH" device=""/>
-<part name="U$1" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
-<part name="U$2" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
-<part name="U$3" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
-<part name="U$4" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="U$1" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.250" value="_4-BARE_MOUNTING_HOLE/.250"/>
+<part name="U$2" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.250" value="_4-BARE_MOUNTING_HOLE/.250"/>
+<part name="U$3" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.250" value="_4-BARE_MOUNTING_HOLE/.250"/>
+<part name="U$4" library="ISS-Notify" deviceset="_4-BARE_MOUNTING_HOLE" device="/.250" value="_4-BARE_MOUNTING_HOLE/.250"/>
 <part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="U$5" library="ISS-Notify" deviceset="LOGO" device="" value="V0.4"/>
 <part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>

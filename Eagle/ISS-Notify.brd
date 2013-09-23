@@ -34,17 +34,17 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -475,23 +475,22 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <wire x1="2.5" y1="-3" x2="-2.5" y2="-3" width="0.127" layer="21"/>
 <wire x1="-3" y1="-1" x2="-3" y2="1" width="0.127" layer="21"/>
 </package>
-<package name="_4/.300-BARE+STD_NUT_OR_STAR_WASHER">
+<package name="_4/.250-BARE+STD_WASHER">
 <description>1/8" hole without plating for #4 screw&lt;br&gt;
-Includes 0.300" outline for standard #4 nut or star lock washer.
-For standard tool clearance, use the 0.400" outline.&lt;br&gt;
-Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</description>
-<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
-<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
-<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
-<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+Includes 0.250" outline for standard #4 washer.
+For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4" is a good choice for a screw head + standard washer, but will not provide enough room for a standard nut to turn.</description>
 <circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
-<circle x="0" y="0" radius="3.81" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="41"/>
+<text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
 <text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
-<text x="3.175" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="0" y="0" drill="3.175"/>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="42"/>
 </package>
 <package name="LOGO">
 <text x="18.7" y="1.5" size="1" layer="21" font="vector" ratio="10">&gt;VALUE</text>
@@ -1987,23 +1986,23 @@ Please make sure your boards conform to these design rules.</description>
 <element name="RESET" library="ISS-Notify" package="SWITCH" value="SWITCH" x="13.192" y="6.036" smashed="yes" rot="MR270">
 <attribute name="NAME" x="17.008" y="3.364" size="1.27" layer="26" font="vector" ratio="20" rot="MR90"/>
 </element>
-<element name="U$1" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="59.69" smashed="yes">
+<element name="U$1" library="ISS-Notify" package="_4/.250-BARE+STD_WASHER" value="_4-BARE_MOUNTING_HOLE/.250" x="3.81" y="59.69" smashed="yes">
 <attribute name="VALUE" x="6.985" y="56.515" size="1.27" layer="27"/>
 </element>
-<element name="U$2" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="59.69" smashed="yes">
+<element name="U$2" library="ISS-Notify" package="_4/.250-BARE+STD_WASHER" value="_4-BARE_MOUNTING_HOLE/.250" x="59.69" y="59.69" smashed="yes">
 <attribute name="VALUE" x="62.865" y="56.515" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="3.81" smashed="yes">
+<element name="U$3" library="ISS-Notify" package="_4/.250-BARE+STD_WASHER" value="_4-BARE_MOUNTING_HOLE/.250" x="59.69" y="3.81" smashed="yes">
 <attribute name="VALUE" x="62.865" y="0.635" size="1.27" layer="27"/>
 </element>
-<element name="U$4" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="3.81" smashed="yes">
+<element name="U$4" library="ISS-Notify" package="_4/.250-BARE+STD_WASHER" value="_4-BARE_MOUNTING_HOLE/.250" x="3.81" y="3.81" smashed="yes">
 <attribute name="VALUE" x="6.985" y="0.635" size="1.27" layer="27"/>
 </element>
 <element name="C16" library="rcl_custom" package="0603-C-NOSILK" value="100 pF" x="48.36" y="8.466" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.71" y="9.866" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="50.36" y="7.666" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="U$5" library="ISS-Notify" package="LOGO" value="V0.4" x="40.7" y="35.5"/>
+<element name="U$5" library="ISS-Notify" package="LOGO" value="V0.4" x="40.1" y="36.1"/>
 <element name="C17" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="47.2" y="60.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="51" y="61.15" size="0.8" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="48" y="62.5" size="1" layer="27" ratio="10" rot="R180"/>
@@ -2133,7 +2132,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="5.5" y="48.6" extent="1-16" drill="0.36"/>
 <via x="4" y="15" extent="1-16" drill="0.36"/>
 <via x="6" y="15" extent="1-16" drill="0.36"/>
-<via x="4" y="11" extent="1-16" drill="0.36"/>
+<via x="2.8" y="10.6" extent="1-16" drill="0.36"/>
 <via x="19" y="7" extent="1-16" drill="0.36"/>
 <via x="18" y="12" extent="1-16" drill="0.36"/>
 <via x="20" y="2" extent="1-16" drill="0.36"/>
@@ -2169,7 +2168,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="37.3" y="41.1" extent="1-16" drill="0.36"/>
 <via x="19.4" y="34.9" extent="1-16" drill="0.36"/>
 <via x="7" y="22.6" extent="1-16" drill="0.36"/>
-<via x="6.1" y="11.2" extent="1-16" drill="0.36"/>
+<via x="6.3" y="9.1" extent="1-16" drill="0.36"/>
 <via x="38.1" y="48.3" extent="1-16" drill="0.36"/>
 <via x="57.1" y="54.8" extent="1-16" drill="0.36"/>
 <via x="54.1" y="59.4" extent="1-16" drill="0.36"/>
@@ -2198,7 +2197,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="62" y="36" extent="1-16" drill="0.36"/>
 <via x="62" y="20" extent="1-16" drill="0.36"/>
 <via x="62" y="9" extent="1-16" drill="0.36"/>
-<via x="9" y="5" extent="1-16" drill="0.36"/>
+<via x="8.6" y="4.5" extent="1-16" drill="0.36"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C17" pad="2"/>
 <via x="26.8" y="48.9" extent="1-16" drill="0.36"/>
@@ -3258,25 +3257,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14" y1="55.615" x2="14.01" y2="55.625" width="0.254" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,ccb06a3e678ec100"/>
-<approved hash="19,1,ac5c8ed2817ea3f0"/>
-<approved hash="19,1,ac188e968abea830"/>
-<approved hash="19,1,6b19f997864614c8"/>
-<approved hash="19,1,0ca02e2e218e0300"/>
-<approved hash="19,1,fce4126a164ef8c0"/>
-<approved hash="19,1,fc71d2ffd3e6fd68"/>
-<approved hash="19,1,6058f2d6f2a3602d"/>
-<approved hash="19,1,ac4f8ec1882aaaa4"/>
-<approved hash="19,1,8027b2a9b2da8054"/>
-<approved hash="19,1,2c0cca82cb9e2d10"/>
-<approved hash="19,1,a0059a8b9a22a0ac"/>
-<approved hash="19,1,ab7191ff92e2a86c"/>
-<approved hash="19,1,ac9d96138ab2b03c"/>
-<approved hash="19,16,ac9d96138ab2b03c"/>
-<approved hash="19,16,a0059a8b9a22a0ac"/>
-<approved hash="19,16,ab7191ff92e2a86c"/>
-</errors>
 </board>
 </drawing>
 </eagle>
