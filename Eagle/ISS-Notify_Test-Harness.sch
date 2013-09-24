@@ -7975,6 +7975,14 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="73.66" y="198.12"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U1" gate="ATMEGA" pin="ADC7_PF7"/>
+<pinref part="TESTVCC" gate="G$1" pin="TEST"/>
+<wire x1="228.6" y1="177.8" x2="307.34" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="177.8" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
