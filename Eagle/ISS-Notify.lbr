@@ -620,6 +620,10 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <package name="TESTPIN">
 <pad name="P$1" x="0" y="0" drill="0.8" shape="octagon"/>
 </package>
+<package name="POGOPIN">
+<pad name="1" x="0" y="0" drill="1" shape="square"/>
+<text x="-2" y="-2" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -1408,6 +1412,21 @@ Test pin hole</description>
 <device name="" package="TESTPIN">
 <connects>
 <connect gate="G$1" pin="TEST" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POGOPIN" prefix="POGO">
+<gates>
+<gate name="G$1" symbol="TESTPIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POGOPIN">
+<connects>
+<connect gate="G$1" pin="TEST" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

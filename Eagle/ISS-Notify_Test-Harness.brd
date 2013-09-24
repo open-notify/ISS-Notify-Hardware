@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -263,11 +263,9 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <wire x1="2.5" y1="-3" x2="-2.5" y2="-3" width="0.127" layer="21"/>
 <wire x1="-3" y1="-1" x2="-3" y2="1" width="0.127" layer="21"/>
 </package>
-<package name="_4/.300-BARE+STD_NUT_OR_STAR_WASHER">
+<package name="_4/.400-BARE+STD_TOOL_CLEARANCE">
 <description>1/8" hole without plating for #4 screw&lt;br&gt;
-Includes 0.300" outline for standard #4 nut or star lock washer.
-For standard tool clearance, use the 0.400" outline.&lt;br&gt;
-Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</description>
+Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not required, the 0.300" outline may be used.</description>
 <wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
 <wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
 <wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
@@ -275,14 +273,16 @@ Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</descrip
 <wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
 <wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
-<circle x="0" y="0" radius="3.81" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="5.08" width="0" layer="39"/>
 <circle x="0" y="0" radius="3.81" width="0" layer="41"/>
-<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
-<text x="3.175" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="4.1275" y="3.4925" size="1.27" layer="25">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="0" y="0" drill="3.175"/>
 </package>
-<package name="TESTPIN">
-<pad name="P$1" x="0" y="0" drill="0.8" shape="octagon"/>
+<package name="POGOPIN">
+<pad name="1" x="0" y="0" drill="1" shape="square"/>
+<text x="-2" y="-2" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1577,8 +1577,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U1" library="ISS-Notify" package="TQFP-44" value="ATMEGA32U4" x="31.75" y="31.75" smashed="yes">
 <attribute name="NAME" x="31.1" y="33.035" size="0.8" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="AVRISP" library="ISS-Notify" package="AVRISP" value="AVRISP" x="12.684" y="31.35" smashed="yes" rot="MR0">
-<attribute name="NAME" x="16.184" y="29.35" size="1.27" layer="22" font="vector" ratio="20" rot="MR90"/>
+<element name="AVRISP" library="ISS-Notify" package="AVRISP" value="AVRISP" x="55.184" y="29.3" smashed="yes">
+<attribute name="NAME" x="51.684" y="27.3" size="1.27" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="USB" library="ISS-Notify" package="USBMICROSMT" value="CON_USB-MICRO-6GND" x="1.47" y="17.78" smashed="yes" rot="R270"/>
 <element name="U3" library="ISS-Notify" package="QFN10" value="TPS63001" x="14.11" y="46.7" smashed="yes" rot="R180">
@@ -1647,27 +1647,33 @@ Please make sure your boards conform to these design rules.</description>
 <element name="X1" library="ISS-Notify" package="CX5Z" value="8 MHz" x="31.75" y="21.136" smashed="yes">
 <attribute name="NAME" x="30.95" y="18.736" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="RESET" library="ISS-Notify" package="SWITCH" value="SWITCH" x="13.192" y="6.036" smashed="yes" rot="MR270">
-<attribute name="NAME" x="17.008" y="3.364" size="1.27" layer="26" font="vector" ratio="20" rot="MR90"/>
+<element name="RESET" library="ISS-Notify" package="SWITCH" value="SWITCH" x="16.714" y="9.842" smashed="yes">
+<attribute name="NAME" x="19.386" y="6.026" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="U$1" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="59.69" smashed="yes">
+<element name="U$1" library="ISS-Notify" package="_4/.400-BARE+STD_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.400" x="3.81" y="59.69" smashed="yes">
 <attribute name="VALUE" x="6.985" y="56.515" size="1.27" layer="27"/>
 </element>
-<element name="U$2" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="59.69" smashed="yes">
+<element name="U$2" library="ISS-Notify" package="_4/.400-BARE+STD_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.400" x="59.69" y="59.69" smashed="yes">
 <attribute name="VALUE" x="62.865" y="56.515" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="59.69" y="3.81" smashed="yes">
+<element name="U$3" library="ISS-Notify" package="_4/.400-BARE+STD_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.400" x="59.69" y="3.81" smashed="yes">
 <attribute name="VALUE" x="62.865" y="0.635" size="1.27" layer="27"/>
 </element>
-<element name="U$4" library="ISS-Notify" package="_4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="_4-BARE_MOUNTING_HOLE/.300" x="3.81" y="3.81" smashed="yes">
+<element name="U$4" library="ISS-Notify" package="_4/.400-BARE+STD_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.400" x="3.81" y="3.81" smashed="yes">
 <attribute name="VALUE" x="6.985" y="0.635" size="1.27" layer="27"/>
 </element>
-<element name="TESTVBAT" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="44.5" y="58.3"/>
-<element name="TESTSCL" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="36.2" y="10"/>
-<element name="TESTSDC" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="46.1" y="13.4"/>
-<element name="TESTDATA" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="27.3" y="44.8"/>
-<element name="TESTCLOCK" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="27.3" y="47.1"/>
-<element name="TESTGND" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="57" y="8.9"/>
+<element name="TESTVBAT" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="44.5" y="58.3"/>
+<element name="TESTSCL" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="36.2" y="10"/>
+<element name="TESTSDC" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="46.1" y="13.4"/>
+<element name="TESTDATA" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="27.3" y="44.8"/>
+<element name="TESTCLOCK" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="27.3" y="47.1"/>
+<element name="TESTGND" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="57" y="8.9"/>
+<element name="TESTMISO" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="13.95" y="33.9"/>
+<element name="TESTVCC" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="11.4" y="33.9"/>
+<element name="TESTSCLK" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="13.95" y="31.35"/>
+<element name="TESTMOSI" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="11.4" y="31.35"/>
+<element name="TESTRESET" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="13.95" y="28.8"/>
+<element name="TESTIGND" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="11.4" y="28.8"/>
 </elements>
 <signals>
 <signal name="UVCC">
@@ -1723,6 +1729,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.7" y1="33.6" x2="30.7" y2="31" width="0.254" layer="16"/>
 <wire x1="4.4" y1="19.2" x2="4.4" y2="38.8" width="0.6096" layer="1"/>
 <wire x1="4.4" y1="38.8" x2="9.1" y2="43.5" width="0.6096" layer="1"/>
+<contactref element="TESTVBAT" pad="1"/>
+<wire x1="22.1" y1="42.2" x2="44.5" y2="58.3" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="R5" pad="1"/>
@@ -1768,7 +1776,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="4" y="15" extent="1-16" drill="0.36"/>
 <via x="6" y="15" extent="1-16" drill="0.36"/>
 <via x="4" y="11" extent="1-16" drill="0.36"/>
-<via x="19" y="7" extent="1-16" drill="0.36"/>
+<via x="13.7" y="2.2" extent="1-16" drill="0.36"/>
 <via x="20" y="2" extent="1-16" drill="0.36"/>
 <via x="33" y="2" extent="1-16" drill="0.36"/>
 <via x="53" y="2" extent="1-16" drill="0.36"/>
@@ -1810,9 +1818,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.7116" y1="46.4452" x2="16.4736" y2="46.4452" width="0.254" layer="1"/>
 <wire x1="14.61" y1="45.225" x2="14.61" y2="43.29" width="0.254" layer="1"/>
 <wire x1="14.61" y1="43.29" x2="14.8" y2="43.1" width="0.254" layer="1"/>
-<contactref element="TESTGND" pad="P$1"/>
-<wire x1="12.56" y1="46.95" x2="12.5239" y2="46.9405" width="0" layer="19" extent="1-1"/>
-<wire x1="15.66" y1="46.95" x2="15.6354" y2="46.9405" width="0" layer="19" extent="1-1"/>
+<contactref element="TESTGND" pad="1"/>
 <via x="1.8" y="38.4" extent="1-16" drill="0.36"/>
 <via x="1.3" y="29.1" extent="1-16" drill="0.36"/>
 <via x="8.6" y="57.2" extent="1-16" drill="0.36"/>
@@ -1820,6 +1826,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="20.3" y="62.2" extent="1-16" drill="0.36"/>
 <via x="32.4" y="62.3" extent="1-16" drill="0.36"/>
 <via x="47.8" y="62.5" extent="1-16" drill="0.36"/>
+<contactref element="TESTIGND" pad="1"/>
+<wire x1="12.56" y1="46.95" x2="12.5239" y2="46.9405" width="0" layer="19" extent="1-1"/>
+<wire x1="15.66" y1="46.95" x2="15.6354" y2="46.9405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="44"/>
@@ -1888,7 +1897,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="22.1" y1="45.2" x2="25.4" y2="41.9" width="0.6096" layer="1"/>
 <wire x1="25.4" y1="41.9" x2="25.4" y2="37.85" width="0.6096" layer="1"/>
 <wire x1="25.4" y1="37.85" x2="25.3" y2="37.75" width="0.6096" layer="1"/>
-<wire x1="11.414" y1="33.89" x2="15.11" y2="45.225" width="0" layer="19" extent="1-1"/>
+<wire x1="39.786" y1="28.55" x2="56.454" y2="31.84" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D-">
 <contactref element="U1" pad="3"/>
@@ -1937,13 +1946,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.6" y1="18.9" x2="6.316" y2="18.9" width="0.254" layer="1"/>
 <wire x1="6.316" y1="18.9" x2="6.358" y2="18.942" width="0.254" layer="1"/>
 </signal>
-<signal name="MFP">
-<contactref element="U1" pad="21"/>
-</signal>
 <signal name="SCL">
 <contactref element="U1" pad="18"/>
-<wire x1="33.4" y1="12.4" x2="32.5" y2="12.4" width="0.254" layer="1"/>
-<via x="32.5" y="12.4" extent="1-16" drill="0.36"/>
 <wire x1="32.5" y1="12.4" x2="32.5" y2="24" width="0.254" layer="16"/>
 <wire x1="32.5" y1="24" x2="32.3" y2="24.2" width="0.254" layer="16"/>
 <via x="32.3" y="24.2" extent="1-16" drill="0.36"/>
@@ -1951,28 +1955,21 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="32.3" y1="24.4" x2="32.5" y2="24.7" width="0.254" layer="1"/>
 <wire x1="32.5" y1="24.7" x2="32.5" y2="25.7" width="0.254" layer="1"/>
 <wire x1="32.5" y1="25.7" x2="32.55" y2="25.75" width="0.254" layer="1"/>
-<contactref element="TESTSCL" pad="P$1"/>
-<wire x1="36.2" y1="10" x2="35.6" y2="10" width="0.254" layer="1"/>
-<wire x1="35.6" y1="10" x2="33.7" y2="11.9" width="0.254" layer="1"/>
-<wire x1="33.7" y1="11.9" x2="33.7" y2="12.1" width="0.254" layer="1"/>
-<wire x1="33.7" y1="12.1" x2="33.4" y2="12.4" width="0.254" layer="1"/>
+<contactref element="TESTSCL" pad="1"/>
+<wire x1="32.5" y1="12.4" x2="36.2" y2="10" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="19"/>
-<wire x1="45.425" y1="12.775" x2="44.9" y2="13.3" width="0.254" layer="1"/>
-<wire x1="44.9" y1="13.3" x2="33.3" y2="13.3" width="0.254" layer="1"/>
-<via x="33.3" y="13.3" extent="1-16" drill="0.36"/>
 <via x="33.5" y="24.2" extent="1-16" drill="0.36"/>
 <wire x1="33.5" y1="24.2" x2="33.5" y2="24.3" width="0.254" layer="1"/>
 <wire x1="33.5" y1="24.3" x2="33.3" y2="24.5" width="0.254" layer="1"/>
 <wire x1="33.3" y1="24.5" x2="33.3" y2="25.7" width="0.254" layer="1"/>
 <wire x1="33.3" y1="25.7" x2="33.35" y2="25.75" width="0.254" layer="1"/>
 <wire x1="33.5" y1="24.2" x2="33.5" y2="14" width="0.254" layer="16"/>
-<wire x1="33.5" y1="14" x2="33.3" y2="13.8" width="0.254" layer="16"/>
-<wire x1="33.3" y1="13.8" x2="33.3" y2="13.3" width="0.254" layer="16"/>
-<contactref element="TESTSDC" pad="P$1"/>
 <wire x1="45.425" y1="12.775" x2="45.475" y2="12.775" width="0.254" layer="1"/>
-<wire x1="45.475" y1="12.775" x2="46.1" y2="13.4" width="0.254" layer="1"/>
+<contactref element="TESTSDC" pad="1"/>
+<wire x1="45.475" y1="12.775" x2="46.1" y2="13.4" width="0" layer="19" extent="1-1"/>
+<wire x1="33.5" y1="14" x2="45.425" y2="12.775" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$10">
 <contactref element="C6" pad="1"/>
@@ -2005,31 +2002,29 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.7" y1="27.8" x2="24.5" y2="27.8" width="0.254" layer="1"/>
 <wire x1="24.5" y1="27.8" x2="24.2" y2="28.1" width="0.254" layer="1"/>
 <wire x1="24.2" y1="28.1" x2="16.8" y2="28.1" width="0.254" layer="1"/>
-<via x="16.8" y="28.1" extent="1-16" drill="0.36"/>
-<wire x1="16.8" y1="28.1" x2="16.5" y2="28.4" width="0.254" layer="16"/>
-<wire x1="16.5" y1="28.4" x2="16.5" y2="33.2" width="0.254" layer="16"/>
-<wire x1="16.5" y1="33.2" x2="15.81" y2="33.89" width="0.254" layer="16"/>
-<wire x1="15.81" y1="33.89" x2="13.954" y2="33.89" width="0.254" layer="16"/>
+<contactref element="TESTMISO" pad="1"/>
+<wire x1="25.75" y1="27.75" x2="53.914" y2="31.84" width="0" layer="19" extent="1-1"/>
+<wire x1="13.95" y1="33.9" x2="16.8" y2="28.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="AVRISP" pad="4"/>
 <contactref element="U1" pad="10"/>
 <wire x1="25.75" y1="28.55" x2="25.3" y2="28.6" width="0.254" layer="1"/>
-<wire x1="16.7" y1="30.1" x2="12.7" y2="30.1" width="0.254" layer="1"/>
-<wire x1="12.7" y1="30.1" x2="11.45" y2="31.35" width="0.254" layer="1"/>
-<wire x1="11.45" y1="31.35" x2="11.414" y2="31.35" width="0.254" layer="1"/>
 <wire x1="25.3" y1="28.6" x2="24.6" y2="28.6" width="0.254" layer="1"/>
 <wire x1="24.6" y1="28.6" x2="24.3" y2="28.9" width="0.254" layer="1"/>
 <wire x1="24.3" y1="28.9" x2="17.9" y2="28.9" width="0.254" layer="1"/>
-<wire x1="17.9" y1="28.9" x2="16.7" y2="30.1" width="0.254" layer="1"/>
+<contactref element="TESTMOSI" pad="1"/>
+<wire x1="25.75" y1="28.55" x2="56.454" y2="29.3" width="0" layer="19" extent="1-1"/>
+<wire x1="11.4" y1="31.35" x2="17.9" y2="28.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCLK">
 <contactref element="U1" pad="9"/>
 <contactref element="AVRISP" pad="3"/>
 <wire x1="25.75" y1="29.35" x2="25.7" y2="29.4" width="0.254" layer="1"/>
 <wire x1="25.7" y1="29.4" x2="18.7" y2="29.4" width="0.254" layer="1"/>
-<wire x1="18.7" y1="29.4" x2="16.75" y2="31.35" width="0.254" layer="1"/>
-<wire x1="16.75" y1="31.35" x2="13.954" y2="31.35" width="0.254" layer="1"/>
+<contactref element="TESTSCLK" pad="1"/>
+<wire x1="25.75" y1="29.35" x2="53.914" y2="29.3" width="0" layer="19" extent="1-1"/>
+<wire x1="13.95" y1="31.35" x2="18.7" y2="29.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_DATA">
 <contactref element="U1" pad="40"/>
@@ -2039,18 +2034,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="31" y1="39.7" x2="31" y2="37.8" width="0.254" layer="1"/>
 <wire x1="31" y1="37.8" x2="30.95" y2="37.75" width="0.3048" layer="1"/>
 <wire x1="29.4" y1="39.7" x2="29.4" y2="44.1" width="0.254" layer="1"/>
-<contactref element="TESTDATA" pad="P$1"/>
-<wire x1="27.3" y1="44.8" x2="28.7" y2="44.8" width="0.254" layer="1"/>
 <wire x1="28.7" y1="44.8" x2="29.4" y2="44.1" width="0.254" layer="1"/>
+<contactref element="TESTDATA" pad="1"/>
+<wire x1="28.7" y1="44.8" x2="27.3" y2="44.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_CLK">
 <contactref element="U1" pad="41"/>
 <wire x1="30.15" y1="37.75" x2="30.15" y2="42.25" width="0.254" layer="1"/>
-<contactref element="TESTCLOCK" pad="P$1"/>
-<wire x1="27.3" y1="47.1" x2="29" y2="47.1" width="0.254" layer="1"/>
 <wire x1="29" y1="47.1" x2="30.2" y2="45.9" width="0.254" layer="1"/>
 <wire x1="30.2" y1="45.9" x2="30.2" y2="42.3" width="0.254" layer="1"/>
 <wire x1="30.2" y1="42.3" x2="30.15" y2="42.25" width="0.254" layer="1"/>
+<contactref element="TESTCLOCK" pad="1"/>
+<wire x1="29" y1="47.1" x2="27.3" y2="47.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$42">
 <contactref element="R3" pad="2"/>
@@ -2063,8 +2058,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="AVRISP" pad="5"/>
 <contactref element="U1" pad="13"/>
 <contactref element="RESET" pad="1"/>
-<wire x1="21" y1="27" x2="21.7" y2="26.3" width="0.254" layer="1"/>
-<wire x1="21.7" y1="26.3" x2="21.7" y2="24" width="0.254" layer="1"/>
 <wire x1="21.7" y1="24" x2="22.4" y2="23.3" width="0.254" layer="1"/>
 <wire x1="22.4" y1="23.3" x2="26.9" y2="23.3" width="0.254" layer="1"/>
 <wire x1="26.9" y1="23.3" x2="27.4" y2="24" width="0.254" layer="1"/>
@@ -2073,11 +2066,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.6" y1="24.3" x2="28.6" y2="25.7" width="0.254" layer="1"/>
 <wire x1="28.6" y1="25.7" x2="28.55" y2="25.75" width="0.254" layer="1"/>
 <wire x1="22.4" y1="23.3" x2="15.9" y2="23.3" width="0.254" layer="1"/>
-<via x="15.9" y="23.3" extent="1-16" drill="0.36"/>
-<wire x1="15.9" y1="23.3" x2="15.442" y2="22.842" width="0.254" layer="16"/>
-<wire x1="15.442" y1="22.842" x2="15.442" y2="9.286" width="0.254" layer="16"/>
-<wire x1="13.954" y1="28.81" x2="15.764" y2="27" width="0.254" layer="1"/>
-<wire x1="15.764" y1="27" x2="21" y2="27" width="0.254" layer="1"/>
+<contactref element="TESTRESET" pad="1"/>
+<wire x1="28.6" y1="25.7" x2="53.914" y2="26.76" width="0" layer="19" extent="1-1"/>
+<wire x1="13.95" y1="28.8" x2="15.9" y2="23.3" width="0" layer="19" extent="1-1"/>
+<wire x1="13.464" y1="7.592" x2="15.9" y2="23.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATSENSE">
 <contactref element="R4" pad="1"/>
