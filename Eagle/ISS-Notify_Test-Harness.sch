@@ -343,6 +343,15 @@ For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4"
 <circle x="0" y="0" radius="3.175" width="0" layer="40"/>
 <circle x="0" y="0" radius="2.54" width="0" layer="42"/>
 </package>
+<package name="6HEAD">
+<pad name="4" x="0" y="-1.27" drill="1" shape="long" rot="R180"/>
+<pad name="3" x="0" y="1.27" drill="1" shape="long" rot="R180"/>
+<pad name="2" x="0" y="3.81" drill="1" shape="long" rot="R180"/>
+<pad name="5" x="0" y="-3.81" drill="1" shape="long" rot="R180"/>
+<pad name="6" x="0" y="-6.35" drill="1" shape="long" rot="R180"/>
+<pad name="1" x="0" y="6.35" drill="1" shape="long" rot="R180"/>
+<text x="-2.794" y="6.858" size="1.27" layer="21" font="vector" ratio="20">1</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -514,6 +523,18 @@ For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4"
 <wire x1="0" y1="12.7" x2="-1.016" y2="11.43" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="5.842" x2="0.508" y2="5.842" width="0.254" layer="94"/>
 <text x="3.048" y="5.334" size="1.27" layer="95" rot="R90">&gt;NAME</text>
+</symbol>
+<symbol name="6HEADER">
+<pin name="1" x="-7.62" y="5.08" length="middle"/>
+<pin name="2" x="-7.62" y="2.54" length="middle"/>
+<pin name="3" x="-7.62" y="0" length="middle"/>
+<pin name="4" x="-7.62" y="-2.54" length="middle"/>
+<pin name="5" x="-7.62" y="-5.08" length="middle"/>
+<pin name="6" x="-7.62" y="-7.62" length="middle"/>
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -743,6 +764,26 @@ AIML-0805-3R3K-T</description>
 <device name="" package="POGOPIN">
 <connects>
 <connect gate="G$1" pin="TEST" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6HEADER" prefix="J">
+<gates>
+<gate name="G$1" symbol="6HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="6HEAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7406,8 +7447,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="22"/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="22"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1 k"/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="39 k"/>
-<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="51 k"/>
 <part name="C1" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="0.1 uF"/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="0.1 uF"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="0.1 uF"/>
@@ -7451,6 +7490,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="TESTRESET" library="ISS-Notify" deviceset="POGOPIN" device=""/>
 <part name="TESTIGND" library="ISS-Notify" deviceset="POGOPIN" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="J1" library="ISS-Notify" deviceset="6HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7471,11 +7511,6 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="VALUE" x="82.55" y="98.298" size="1.778" layer="96"/>
 </instance>
 <instance part="R3" gate="R" x="144.78" y="114.3" rot="R90"/>
-<instance part="R4" gate="R" x="73.66" y="203.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.1614" y="204.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="76.962" y="199.39" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R5" gate="R" x="73.66" y="193.04" rot="R90"/>
 <instance part="C1" gate="CE" x="149.86" y="205.74" smashed="yes">
 <attribute name="NAME" x="151.384" y="206.121" size="1.778" layer="95"/>
 <attribute name="VALUE" x="154.94" y="197.485" size="1.778" layer="96"/>
@@ -7500,7 +7535,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND1" gate="1" x="149.86" y="175.26"/>
 <instance part="GND2" gate="1" x="60.96" y="81.28"/>
 <instance part="C10" gate="CE" x="124.46" y="205.74"/>
-<instance part="GND5" gate="1" x="73.66" y="175.26"/>
+<instance part="GND5" gate="1" x="86.36" y="175.26"/>
 <instance part="GND6" gate="1" x="124.46" y="175.26"/>
 <instance part="GND7" gate="1" x="170.18" y="91.44"/>
 <instance part="P+1" gate="VCC" x="170.18" y="226.06"/>
@@ -7536,7 +7571,8 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="TESTMOSI" gate="G$1" x="317.5" y="198.12"/>
 <instance part="TESTRESET" gate="G$1" x="322.58" y="198.12"/>
 <instance part="TESTIGND" gate="G$1" x="327.66" y="198.12"/>
-<instance part="GND3" gate="1" x="327.66" y="86.36"/>
+<instance part="GND3" gate="1" x="335.28" y="121.92"/>
+<instance part="J1" gate="G$1" x="350.52" y="144.78"/>
 </instances>
 <busses>
 <bus name="D+,D-">
@@ -7572,13 +7608,10 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="53.34" y1="185.42" x2="53.34" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="187.96" x2="53.34" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="167.64" x2="60.96" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="187.96" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="167.64" x2="58.42" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="187.96" x2="53.34" y2="187.96" width="0.1524" layer="91"/>
-<junction x="53.34" y="187.96"/>
+<wire x1="154.94" y1="167.64" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
+<junction x="60.96" y="167.64"/>
 <pinref part="U1" gate="ATMEGA" pin="VBUS"/>
 <wire x1="172.72" y1="187.96" x2="154.94" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VINA"/>
@@ -7587,39 +7620,30 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="81.28" y1="208.28" x2="83.82" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="208.28" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
 <junction x="81.28" y="208.28"/>
-<pinref part="R4" gate="R" pin="2"/>
-<wire x1="73.66" y1="208.28" x2="81.28" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="208.28" x2="53.34" y2="208.28" width="0.1524" layer="91"/>
-<junction x="73.66" y="208.28"/>
+<wire x1="81.28" y1="208.28" x2="60.96" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="USB" gate="CF" pin="1"/>
 <wire x1="58.42" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="99.06" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="134.62" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="185.42" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="160.02" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="185.42" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="TESTVBAT" gate="G$1" pin="TEST"/>
-<wire x1="106.68" y1="134.62" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
-<junction x="60.96" y="134.62"/>
+<wire x1="60.96" y1="99.06" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="EN"/>
+<wire x1="83.82" y1="198.12" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="198.12" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
+<junction x="81.28" y="205.74"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="R5" gate="R" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="73.66" y1="177.8" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="177.8" x2="86.36" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GNDPAD"/>
-<wire x1="73.66" y1="182.88" x2="73.66" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="185.42" x2="104.14" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="182.88" x2="101.6" y2="182.88" width="0.1524" layer="91"/>
-<junction x="73.66" y="182.88"/>
 <pinref part="U3" gate="G$1" pin="PGND4"/>
 <wire x1="101.6" y1="182.88" x2="99.06" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="182.88" x2="96.52" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="182.88" x2="93.98" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="182.88" x2="91.44" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="182.88" x2="81.28" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="182.88" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="182.88" x2="86.36" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="182.88" x2="86.36" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="185.42" x2="99.06" y2="182.88" width="0.1524" layer="91"/>
 <junction x="99.06" y="182.88"/>
 <pinref part="U3" gate="G$1" pin="PGND3"/>
@@ -7726,11 +7750,6 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="TESTGND" gate="G$1" pin="TEST"/>
 <wire x1="345.44" y1="195.58" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="TESTIGND" gate="G$1" pin="TEST"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="327.66" y1="88.9" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7877,48 +7896,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="165.1" y1="139.7" x2="172.72" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="AVRISP" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="101.6" x2="233.68" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="MISO_PB3"/>
-<wire x1="233.68" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
-<label x="220.98" y="101.6" size="1.778" layer="95"/>
-<pinref part="TESTMISO" gate="G$1" pin="TEST"/>
-<wire x1="233.68" y1="134.62" x2="302.26" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="134.62" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
-<junction x="233.68" y="134.62"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<pinref part="AVRISP" gate="G$1" pin="4"/>
-<wire x1="218.44" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="93.98" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="MOSI_PB2"/>
-<wire x1="238.76" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
-<label x="220.98" y="93.98" size="1.778" layer="95"/>
-<pinref part="TESTMOSI" gate="G$1" pin="TEST"/>
-<wire x1="238.76" y1="93.98" x2="317.5" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="93.98" x2="317.5" y2="198.12" width="0.1524" layer="91"/>
-<junction x="238.76" y="93.98"/>
-</segment>
-</net>
-<net name="SCLK" class="0">
-<segment>
-<pinref part="U1" gate="ATMEGA" pin="SCLK_PB1"/>
-<wire x1="228.6" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="129.54" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="AVRISP" gate="G$1" pin="3"/>
-<wire x1="236.22" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
-<label x="220.98" y="96.52" size="1.778" layer="95"/>
-<pinref part="TESTSCLK" gate="G$1" pin="TEST"/>
-<wire x1="236.22" y1="96.52" x2="312.42" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="96.52" x2="312.42" y2="198.12" width="0.1524" layer="91"/>
-<junction x="236.22" y="96.52"/>
-</segment>
-</net>
 <net name="LED_DATA" class="0">
 <segment>
 <pinref part="U1" gate="ATMEGA" pin="ADC1_PF1"/>
@@ -7960,38 +7937,47 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="185.42" y="83.82"/>
 <label x="220.98" y="91.44" size="1.778" layer="95"/>
 <label x="185.42" y="96.52" size="1.778" layer="95" rot="R270"/>
-<pinref part="TESTRESET" gate="G$1" pin="TEST"/>
-<wire x1="228.6" y1="91.44" x2="322.58" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="91.44" x2="322.58" y2="198.12" width="0.1524" layer="91"/>
-<junction x="228.6" y="91.44"/>
 </segment>
 </net>
-<net name="BATSENSE" class="0">
+<net name="N$7" class="0">
 <segment>
-<pinref part="R4" gate="R" pin="1"/>
-<pinref part="R5" gate="R" pin="2"/>
-<pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="83.82" y1="198.12" x2="73.66" y2="198.12" width="0.1524" layer="91"/>
-<junction x="73.66" y="198.12"/>
+<pinref part="U1" gate="ATMEGA" pin="MISO_PB3"/>
+<wire x1="233.68" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="101.6" x2="233.68" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="AVRISP" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
+<label x="220.98" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$8" class="0">
 <segment>
-<pinref part="U1" gate="ATMEGA" pin="ADC7_PF7"/>
-<pinref part="TESTVCC" gate="G$1" pin="TEST"/>
-<wire x1="228.6" y1="177.8" x2="307.34" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="177.8" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="AVRISP" gate="G$1" pin="3"/>
+<pinref part="U1" gate="ATMEGA" pin="SCLK_PB1"/>
+<wire x1="228.6" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="129.54" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
+<label x="220.98" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U1" gate="ATMEGA" pin="MOSI_PB2"/>
+<wire x1="238.76" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="93.98" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="AVRISP" gate="G$1" pin="4"/>
+<wire x1="218.44" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
+<label x="220.98" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="204,1,149.86,215.9,U1,UVCC,,,,"/>
-<approved hash="104,1,149.86,203.2,U1,AVCC,VCC,,,"/>
-<approved hash="104,1,149.86,200.66,U1,AVCC,VCC,,,"/>
-<approved hash="202,1,149.86,172.72,U1,AREF,,,,"/>
-<approved hash="104,1,149.86,144.78,U1,UGND,GND,,,"/>
+<approved hash="204,1,172.72,190.5,U1,UVCC,,,,"/>
+<approved hash="104,1,172.72,177.8,U1,AVCC,VCC,,,"/>
+<approved hash="104,1,172.72,175.26,U1,AVCC,VCC,,,"/>
+<approved hash="202,1,172.72,147.32,U1,AREF,,,,"/>
+<approved hash="104,1,172.72,119.38,U1,UGND,GND,,,"/>
 </errors>
 </schematic>
 </drawing>
