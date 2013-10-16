@@ -8182,9 +8182,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="271.78" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="149.86" x2="236.22" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="OC3A_OC4A_PC6"/>
+<wire x1="238.76" y1="157.48" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="T1_OC4D_ADC9"/>
+<wire x1="236.22" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED2_G" class="0">
@@ -8194,9 +8194,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="274.32" y1="96.52" x2="271.78" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="152.4" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="ICP3_0C4A_PC7"/>
-<wire x1="236.22" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="165.1" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="ADC11_PB4"/>
+<wire x1="236.22" y1="167.64" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED2_R" class="0">
@@ -8206,9 +8206,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="274.32" y1="101.6" x2="271.78" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="157.48" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="T1_OC4D_ADC9"/>
-<wire x1="236.22" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="160.02" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="T0_OC4D_ADC10"/>
+<wire x1="236.22" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1_B" class="0">
@@ -8218,9 +8218,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="271.78" y1="111.76" x2="274.32" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="160.02" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="T0_OC4D_ADC10"/>
-<wire x1="236.22" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="167.64" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="OC1A_ADC12_PB5"/>
+<wire x1="236.22" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1_G" class="0">
@@ -8230,9 +8230,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="271.78" y1="116.84" x2="274.32" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="165.1" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="ADC11_PB4"/>
-<wire x1="236.22" y1="167.64" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="152.4" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="ICP3_0C4A_PC7"/>
+<wire x1="236.22" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1_R" class="0">
@@ -8242,9 +8242,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="271.78" y1="121.92" x2="274.32" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="167.64" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ATMEGA" pin="OC1A_ADC12_PB5"/>
-<wire x1="236.22" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="149.86" x2="236.22" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="OC3A_OC4A_PC6"/>
+<wire x1="236.22" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
