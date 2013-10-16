@@ -7490,7 +7490,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="TESTRESET" library="ISS-Notify" deviceset="POGOPIN" device=""/>
 <part name="TESTIGND" library="ISS-Notify" deviceset="POGOPIN" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="J1" library="ISS-Notify" deviceset="6HEADER" device=""/>
+<part name="JPROGRAMER" library="ISS-Notify" deviceset="6HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7564,7 +7564,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="TESTDATA" gate="G$1" x="266.7" y="198.12"/>
 <instance part="TESTCLOCK" gate="G$1" x="259.08" y="198.12"/>
 <instance part="TESTGND" gate="G$1" x="345.44" y="198.12"/>
-<instance part="GND23" gate="1" x="345.44" y="193.04"/>
+<instance part="GND23" gate="1" x="345.44" y="175.26"/>
 <instance part="TESTMISO" gate="G$1" x="302.26" y="198.12"/>
 <instance part="TESTVCC" gate="G$1" x="307.34" y="198.12"/>
 <instance part="TESTSCLK" gate="G$1" x="312.42" y="198.12"/>
@@ -7572,7 +7572,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="TESTRESET" gate="G$1" x="322.58" y="198.12"/>
 <instance part="TESTIGND" gate="G$1" x="327.66" y="198.12"/>
 <instance part="GND3" gate="1" x="335.28" y="121.92"/>
-<instance part="J1" gate="G$1" x="350.52" y="144.78"/>
+<instance part="JPROGRAMER" gate="G$1" x="350.52" y="144.78"/>
 </instances>
 <busses>
 <bus name="D+,D-">
@@ -7749,7 +7749,7 @@ DIN A3, landscape with location and doc. field</description>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="TESTGND" gate="G$1" pin="TEST"/>
-<wire x1="345.44" y1="195.58" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="177.8" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7939,7 +7939,7 @@ DIN A3, landscape with location and doc. field</description>
 <label x="185.42" y="96.52" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="MISO" class="0">
 <segment>
 <pinref part="U1" gate="ATMEGA" pin="MISO_PB3"/>
 <wire x1="233.68" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
@@ -7949,7 +7949,7 @@ DIN A3, landscape with location and doc. field</description>
 <label x="220.98" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="AVRCLK" class="0">
 <segment>
 <pinref part="AVRISP" gate="G$1" pin="3"/>
 <pinref part="U1" gate="ATMEGA" pin="SCLK_PB1"/>
@@ -7959,7 +7959,7 @@ DIN A3, landscape with location and doc. field</description>
 <label x="220.98" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="MOSI" class="0">
 <segment>
 <pinref part="U1" gate="ATMEGA" pin="MOSI_PB2"/>
 <wire x1="238.76" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
@@ -7967,6 +7967,53 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="AVRISP" gate="G$1" pin="4"/>
 <wire x1="218.44" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
 <label x="220.98" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TESTMISO" class="0">
+<segment>
+<pinref part="JPROGRAMER" gate="G$1" pin="1"/>
+<pinref part="TESTMISO" gate="G$1" pin="TEST"/>
+<wire x1="342.9" y1="149.86" x2="302.26" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="149.86" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TESTVCC" class="0">
+<segment>
+<pinref part="JPROGRAMER" gate="G$1" pin="2"/>
+<pinref part="TESTVCC" gate="G$1" pin="TEST"/>
+<wire x1="342.9" y1="147.32" x2="307.34" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="147.32" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TESTSCLK" class="0">
+<segment>
+<pinref part="JPROGRAMER" gate="G$1" pin="3"/>
+<pinref part="TESTSCLK" gate="G$1" pin="TEST"/>
+<wire x1="342.9" y1="144.78" x2="312.42" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="144.78" x2="312.42" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TESTMOSI" class="0">
+<segment>
+<pinref part="TESTMOSI" gate="G$1" pin="TEST"/>
+<wire x1="345.44" y1="142.24" x2="317.5" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="142.24" x2="317.5" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TESTRESET" class="0">
+<segment>
+<pinref part="JPROGRAMER" gate="G$1" pin="5"/>
+<pinref part="TESTRESET" gate="G$1" pin="TEST"/>
+<wire x1="342.9" y1="139.7" x2="322.58" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="139.7" x2="322.58" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TESTGND" class="0">
+<segment>
+<pinref part="JPROGRAMER" gate="G$1" pin="6"/>
+<pinref part="TESTIGND" gate="G$1" pin="TEST"/>
+<wire x1="342.9" y1="137.16" x2="327.66" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="137.16" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
