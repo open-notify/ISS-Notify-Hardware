@@ -352,6 +352,14 @@ For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4"
 <pad name="1" x="0" y="6.35" drill="1" shape="long" rot="R180"/>
 <text x="-2.794" y="6.858" size="1.27" layer="21" font="vector" ratio="20">1</text>
 </package>
+<package name="SMDRGBLED">
+<smd name="RED" x="-0.75" y="0.55" dx="0.9" dy="0.6" layer="1"/>
+<smd name="GREEN" x="0.75" y="0.55" dx="0.9" dy="0.6" layer="1"/>
+<smd name="ANODE" x="-0.75" y="-0.55" dx="0.9" dy="0.6" layer="1"/>
+<smd name="BLUE" x="0.75" y="-0.55" dx="0.9" dy="0.6" layer="1"/>
+<text x="-2.54" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<circle x="-1.7" y="0" radius="0.22360625" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -535,6 +543,41 @@ For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4"
 <wire x1="2.54" y1="7.62" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-10.16" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RGBLED">
+<wire x1="0" y1="2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="6.35" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<text x="1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="ANODE" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="B" x="5.08" y="-2.54" visible="off" length="short" rot="R90"/>
+<pin name="G" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
+<pin name="R" x="-5.08" y="-2.54" visible="off" length="short" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="0"/>
+<vertex x="0" y="-1.27"/>
+<vertex x="1.27" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="0"/>
+<vertex x="0" y="1.27"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="3.81" y="0"/>
+<vertex x="5.08" y="-1.27"/>
+<vertex x="6.35" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-5.08" y="-1.27"/>
+<vertex x="-3.81" y="0"/>
+<vertex x="-6.35" y="0"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -784,6 +827,24 @@ AIML-0805-3R3K-T</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RGBLED" prefix="LED">
+<gates>
+<gate name="G$1" symbol="RGBLED" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SMDRGBLED">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="B" pad="BLUE"/>
+<connect gate="G$1" pin="G" pad="GREEN"/>
+<connect gate="G$1" pin="R" pad="RED"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7491,6 +7552,15 @@ DIN A3, landscape with location and doc. field</description>
 <part name="TESTIGND" library="ISS-Notify" deviceset="POGOPIN" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="JPROGRAMER" library="ISS-Notify" deviceset="6HEADER" device=""/>
+<part name="STATUS1" library="ISS-Notify" deviceset="RGBLED" device=""/>
+<part name="STATUS2" library="ISS-Notify" deviceset="RGBLED" device=""/>
+<part name="P+3" library="supply1" deviceset="VCC" device=""/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="82"/>
+<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="82"/>
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="82"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="82"/>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10"/>
 </parts>
 <sheets>
 <sheet>
@@ -7571,8 +7641,35 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="TESTMOSI" gate="G$1" x="317.5" y="198.12"/>
 <instance part="TESTRESET" gate="G$1" x="322.58" y="198.12"/>
 <instance part="TESTIGND" gate="G$1" x="327.66" y="198.12"/>
-<instance part="GND3" gate="1" x="335.28" y="121.92"/>
+<instance part="GND3" gate="1" x="327.66" y="121.92"/>
 <instance part="JPROGRAMER" gate="G$1" x="350.52" y="144.78"/>
+<instance part="STATUS1" gate="G$1" x="292.1" y="116.84" rot="R270"/>
+<instance part="STATUS2" gate="G$1" x="292.1" y="96.52" rot="R270"/>
+<instance part="P+3" gate="VCC" x="307.34" y="132.08"/>
+<instance part="R4" gate="R" x="279.4" y="121.92" smashed="yes">
+<attribute name="NAME" x="275.59" y="123.4186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="123.698" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="R" x="279.4" y="116.84" smashed="yes">
+<attribute name="NAME" x="275.59" y="118.3386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="118.618" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="R" x="279.4" y="111.76" smashed="yes">
+<attribute name="NAME" x="275.59" y="113.2586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="113.538" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="R" x="279.4" y="101.6" smashed="yes">
+<attribute name="NAME" x="275.59" y="103.0986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="103.378" size="1.778" layer="96"/>
+</instance>
+<instance part="R8" gate="R" x="279.4" y="96.52" smashed="yes">
+<attribute name="NAME" x="275.59" y="98.0186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="98.298" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="R" x="279.4" y="91.44" smashed="yes">
+<attribute name="NAME" x="275.59" y="92.9386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="93.218" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="D+,D-">
@@ -7586,6 +7683,15 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="132.08" y1="109.22" x2="93.98" y2="109.22" width="0.762" layer="92"/>
 <wire x1="93.98" y1="109.22" x2="91.44" y2="106.68" width="0.762" layer="92"/>
 <wire x1="91.44" y1="106.68" x2="91.44" y2="96.52" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="LED1_R,LED1_G,LED1_B,LED2_R,LED2_G,LED2_B">
+<segment>
+<wire x1="269.24" y1="93.98" x2="269.24" y2="144.78" width="0.762" layer="92"/>
+<wire x1="269.24" y1="144.78" x2="266.7" y2="147.32" width="0.762" layer="92"/>
+<wire x1="266.7" y1="147.32" x2="241.3" y2="147.32" width="0.762" layer="92"/>
+<wire x1="241.3" y1="147.32" x2="238.76" y2="149.86" width="0.762" layer="92"/>
+<wire x1="238.76" y1="149.86" x2="238.76" y2="167.64" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -7751,6 +7857,14 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="TESTGND" gate="G$1" pin="TEST"/>
 <wire x1="345.44" y1="177.8" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JPROGRAMER" gate="G$1" pin="6"/>
+<pinref part="TESTIGND" gate="G$1" pin="TEST"/>
+<wire x1="342.9" y1="137.16" x2="327.66" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="137.16" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="327.66" y1="137.16" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -7817,6 +7931,16 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="AVRISP" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
 <label x="220.98" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STATUS1" gate="G$1" pin="ANODE"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="297.18" y1="116.84" x2="307.34" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="116.84" x2="307.34" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="STATUS2" gate="G$1" pin="ANODE"/>
+<wire x1="297.18" y1="96.52" x2="307.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="96.52" x2="307.34" y2="116.84" width="0.1524" layer="91"/>
+<junction x="307.34" y="116.84"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -7996,8 +8120,9 @@ DIN A3, landscape with location and doc. field</description>
 <net name="TESTMOSI" class="0">
 <segment>
 <pinref part="TESTMOSI" gate="G$1" pin="TEST"/>
-<wire x1="345.44" y1="142.24" x2="317.5" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="142.24" x2="317.5" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="JPROGRAMER" gate="G$1" pin="4"/>
+<wire x1="342.9" y1="142.24" x2="317.5" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TESTRESET" class="0">
@@ -8008,12 +8133,118 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="322.58" y1="139.7" x2="322.58" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TESTGND" class="0">
+<net name="N$3" class="0">
 <segment>
-<pinref part="JPROGRAMER" gate="G$1" pin="6"/>
-<pinref part="TESTIGND" gate="G$1" pin="TEST"/>
-<wire x1="342.9" y1="137.16" x2="327.66" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="137.16" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="STATUS1" gate="G$1" pin="R"/>
+<pinref part="R4" gate="R" pin="2"/>
+<wire x1="284.48" y1="121.92" x2="289.56" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="STATUS1" gate="G$1" pin="G"/>
+<pinref part="R5" gate="R" pin="2"/>
+<wire x1="289.56" y1="116.84" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="STATUS1" gate="G$1" pin="B"/>
+<pinref part="R6" gate="R" pin="2"/>
+<wire x1="289.56" y1="111.76" x2="284.48" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="STATUS2" gate="G$1" pin="R"/>
+<pinref part="R7" gate="R" pin="2"/>
+<wire x1="289.56" y1="101.6" x2="284.48" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="STATUS2" gate="G$1" pin="G"/>
+<pinref part="R8" gate="R" pin="2"/>
+<wire x1="289.56" y1="96.52" x2="284.48" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="STATUS2" gate="G$1" pin="B"/>
+<pinref part="R9" gate="R" pin="2"/>
+<wire x1="289.56" y1="91.44" x2="284.48" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED2_B" class="0">
+<segment>
+<wire x1="269.24" y1="93.98" x2="271.78" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R9" gate="R" pin="1"/>
+<wire x1="271.78" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="149.86" x2="236.22" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="OC3A_OC4A_PC6"/>
+</segment>
+</net>
+<net name="LED2_G" class="0">
+<segment>
+<wire x1="269.24" y1="99.06" x2="271.78" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R8" gate="R" pin="1"/>
+<wire x1="274.32" y1="96.52" x2="271.78" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="152.4" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="ICP3_0C4A_PC7"/>
+<wire x1="236.22" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED2_R" class="0">
+<segment>
+<wire x1="269.24" y1="104.14" x2="271.78" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R7" gate="R" pin="1"/>
+<wire x1="274.32" y1="101.6" x2="271.78" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="157.48" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="T1_OC4D_ADC9"/>
+<wire x1="236.22" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED1_B" class="0">
+<segment>
+<wire x1="269.24" y1="114.3" x2="271.78" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R6" gate="R" pin="1"/>
+<wire x1="271.78" y1="111.76" x2="274.32" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="160.02" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="T0_OC4D_ADC10"/>
+<wire x1="236.22" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED1_G" class="0">
+<segment>
+<wire x1="269.24" y1="119.38" x2="271.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R5" gate="R" pin="1"/>
+<wire x1="271.78" y1="116.84" x2="274.32" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="165.1" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="ADC11_PB4"/>
+<wire x1="236.22" y1="167.64" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED1_R" class="0">
+<segment>
+<wire x1="269.24" y1="124.46" x2="271.78" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R4" gate="R" pin="1"/>
+<wire x1="271.78" y1="121.92" x2="274.32" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="167.64" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ATMEGA" pin="OC1A_ADC12_PB5"/>
+<wire x1="236.22" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
