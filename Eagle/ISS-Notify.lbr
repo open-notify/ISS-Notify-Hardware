@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -291,8 +291,8 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 <wire x1="-0.25" y1="-0.625" x2="0.25" y2="-0.625" width="0.2" layer="51"/>
 <wire x1="0.25" y1="-0.625" x2="1" y2="-0.625" width="0.2" layer="51"/>
 <wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.2" layer="51"/>
-<smd name="1" x="-0.8" y="0" dx="0.95" dy="1.35" layer="1"/>
-<smd name="2" x="0.8" y="0" dx="0.95" dy="1.35" layer="1"/>
+<smd name="1" x="-0.927" y="0" dx="1.143" dy="1.524" layer="1"/>
+<smd name="2" x="0.927" y="0" dx="1.143" dy="1.524" layer="1"/>
 <text x="-0.8" y="0.9" size="1" layer="25" ratio="10">&gt;NAME</text>
 <text x="-0.8" y="-1.9" size="1" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.6" y1="-0.625" x2="1" y2="0.625" layer="51"/>
