@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="4.75" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -53,6 +53,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="Invisible" color="7" fill="1" visible="no" active="yes"/>
 <layer number="61" name="stand" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
@@ -92,8 +93,12 @@
 <layer number="131" name="tText" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bMask" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -1691,6 +1696,25 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 </package>
 </packages>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2064,6 +2088,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TESTCLOCK" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="27.3" y="47.1"/>
 <element name="TESTGND" library="ISS-Notify" package="TESTPIN" value="TESTPIN" x="57" y="8.9"/>
 <element name="J1" library="con-hirose-microusb" package="ZX62D-B-5P8" value="ZX62D-B-5P8" x="1.778" y="17.78" rot="R270"/>
+<element name="U$6" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="8.128" y="56.261"/>
+<element name="U$7" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="8.382" y="8.89" rot="MR0"/>
+<element name="U$8" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="7.366" y="13.208"/>
+<element name="U$9" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="48.768" y="20.193"/>
+<element name="U$10" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="55.499" y="56.007" rot="MR0"/>
+<element name="U$11" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="52.451" y="7.747" rot="MR0"/>
 </elements>
 <signals>
 <signal name="UVCC">
@@ -3320,8 +3350,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="2,20,69baf7b4e1287f26"/>
 <approved hash="2,20,6afaf4f4c0505e5e"/>
 <approved hash="19,1,ccb06a3e678ec100"/>
-<approved hash="19,1,ac188e968abea830"/>
 <approved hash="19,1,ac5c8ed2817ea3f0"/>
+<approved hash="19,1,ac188e968abea830"/>
 <approved hash="19,1,6b19f997864614c8"/>
 <approved hash="19,1,0ca02e2e218e0300"/>
 <approved hash="19,1,fce4126a164ef8c0"/>
@@ -3333,9 +3363,9 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,ab7191ff92e2a86c"/>
 <approved hash="19,1,a0059a8b9a22a0ac"/>
 <approved hash="19,1,ac9d96138ab2b03c"/>
+<approved hash="19,16,a0059a8b9a22a0ac"/>
 <approved hash="19,16,ac9d96138ab2b03c"/>
 <approved hash="19,16,ab7191ff92e2a86c"/>
-<approved hash="19,16,a0059a8b9a22a0ac"/>
 </errors>
 </board>
 </drawing>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -53,6 +53,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
 <layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -90,8 +91,12 @@
 <layer number="131" name="tText" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bMask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -8061,6 +8066,46 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL">
+<description>For use by pick and place machines to calibrate the vision/machine, 1mm
+&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_1MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8167,6 +8212,12 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="U$6" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$7" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$8" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$9" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$10" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$11" library="adafruit" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8177,6 +8228,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="261.62" y="246.38" size="3.81" layer="97">Real Time Clock</text>
 <text x="106.68" y="91.44" size="3.81" layer="97">Color LEDs</text>
 <text x="325.12" y="132.08" size="3.81" layer="97">Breakout Header</text>
+<text x="17.78" y="71.12" size="1.778" layer="97">Fiducials</text>
 </plain>
 <instances>
 <instance part="U1" gate="ATMEGA" x="177.8" y="177.8"/>
@@ -8311,6 +8363,12 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND23" gate="1" x="340.36" y="63.5"/>
 <instance part="J1" gate="G$1" x="22.86" y="111.76"/>
 <instance part="GND24" gate="1" x="137.16" y="175.26"/>
+<instance part="U$6" gate="G$1" x="17.78" y="86.36"/>
+<instance part="U$7" gate="G$1" x="17.78" y="78.74"/>
+<instance part="U$8" gate="G$1" x="25.4" y="78.74"/>
+<instance part="U$9" gate="G$1" x="25.4" y="86.36"/>
+<instance part="U$10" gate="G$1" x="33.02" y="86.36"/>
+<instance part="U$11" gate="G$1" x="33.02" y="78.74"/>
 </instances>
 <busses>
 <bus name="D+,D-">
