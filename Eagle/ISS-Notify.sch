@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -617,6 +617,29 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <package name="TESTPIN">
 <pad name="P$1" x="0" y="0" drill="0.8" shape="octagon"/>
 </package>
+<package name="USBMICROSMT-HIROSE">
+<wire x1="-4.846" y1="-1.45" x2="5.354" y2="-1.45" width="0.1" layer="51"/>
+<rectangle x1="-4.246" y1="-1.4" x2="4.754" y2="1.9" layer="41"/>
+<pad name="P$1" x="3.764" y="0" drill="1.524"/>
+<pad name="P$2" x="-3.256" y="0" drill="1.524"/>
+<pad name="P$3" x="-2.171" y="3" drill="0.8382"/>
+<pad name="P$4" x="2.679" y="3" drill="0.8382"/>
+<smd name="P1" x="-1.046" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P2" x="-0.396" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P3" x="0.254" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P4" x="0.904" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P5" x="1.554" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<text x="4.254" y="3.1" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -930,6 +953,26 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="0" y1="12.7" x2="-1.016" y2="11.43" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="5.842" x2="0.508" y2="5.842" width="0.254" layer="94"/>
 <text x="3.048" y="5.334" size="1.27" layer="95" rot="R90">&gt;NAME</text>
+</symbol>
+<symbol name="MICROUSB">
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-10.16" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<pin name="D+" x="7.62" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="D-" x="7.62" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="ID" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SHLD@1" x="7.62" y="-2.54" visible="pin" length="short" direction="sup" rot="R180"/>
+<pin name="SHLD@2" x="7.62" y="-5.08" visible="pin" length="short" direction="sup" rot="R180"/>
+<pin name="SHLD@3" x="7.62" y="-7.62" visible="pin" length="short" direction="sup" rot="R180"/>
+<pin name="SHLD@4" x="7.62" y="-10.16" visible="pin" length="short" direction="sup" rot="R180"/>
+<pin name="VCC" x="7.62" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<text x="-9.906" y="16.002" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1358,6 +1401,41 @@ Test pin hole</description>
 <connects>
 <connect gate="G$1" pin="TEST" pad="P$1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_USB-MICRO-ZX62D-B-5P8">
+<gates>
+<gate name="G$1" symbol="MICROUSB" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="USBMICROSMT-HIROSE">
+<connects>
+<connect gate="G$1" pin="D+" pad="P3"/>
+<connect gate="G$1" pin="D-" pad="P2"/>
+<connect gate="G$1" pin="GND" pad="P5"/>
+<connect gate="G$1" pin="ID" pad="P4"/>
+<connect gate="G$1" pin="SHLD@1" pad="P$1"/>
+<connect gate="G$1" pin="SHLD@2" pad="P$2"/>
+<connect gate="G$1" pin="SHLD@3" pad="P$3"/>
+<connect gate="G$1" pin="SHLD@4" pad="P$4"/>
+<connect gate="G$1" pin="VCC" pad="P1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_1MM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8004,108 +8082,6 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-hirose-microusb">
-<packages>
-<package name="ZX62D-B-5P8">
-<wire x1="-5.1" y1="-1.45" x2="5.1" y2="-1.45" width="0.1" layer="51"/>
-<rectangle x1="-4.5" y1="-1.4" x2="4.5" y2="1.9" layer="41"/>
-<pad name="P$1" x="3.51" y="0" drill="1.524"/>
-<pad name="P$2" x="-3.51" y="0" drill="1.524"/>
-<pad name="P$3" x="-2.425" y="3" drill="0.8382"/>
-<pad name="P$4" x="2.425" y="3" drill="0.8382"/>
-<smd name="P1" x="-1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
-<smd name="P2" x="-0.65" y="2.675" dx="0.4" dy="1.35" layer="1"/>
-<smd name="P3" x="0" y="2.675" dx="0.4" dy="1.35" layer="1"/>
-<smd name="P4" x="0.65" y="2.675" dx="0.4" dy="1.35" layer="1"/>
-<smd name="P5" x="1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
-<text x="4" y="3.1" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MICRO-USB">
-<wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
-<pin name="D+" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="D-" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="10.16" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="ID" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="SHLD@1" x="10.16" y="-2.54" visible="pin" length="short" direction="sup" rot="R180"/>
-<pin name="SHLD@2" x="10.16" y="-5.08" visible="pin" length="short" direction="sup" rot="R180"/>
-<pin name="SHLD@3" x="10.16" y="-7.62" visible="pin" length="short" direction="sup" rot="R180"/>
-<pin name="SHLD@4" x="10.16" y="-10.16" visible="pin" length="short" direction="sup" rot="R180"/>
-<pin name="VCC" x="10.16" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
-<text x="-7.366" y="16.002" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ZX62D-B-5P8" prefix="J">
-<gates>
-<gate name="G$1" symbol="MICRO-USB" x="13.716" y="-8.128"/>
-</gates>
-<devices>
-<device name="" package="ZX62D-B-5P8">
-<connects>
-<connect gate="G$1" pin="D+" pad="P3"/>
-<connect gate="G$1" pin="D-" pad="P2"/>
-<connect gate="G$1" pin="GND" pad="P5"/>
-<connect gate="G$1" pin="ID" pad="P4"/>
-<connect gate="G$1" pin="SHLD@1" pad="P$1"/>
-<connect gate="G$1" pin="SHLD@2" pad="P$2"/>
-<connect gate="G$1" pin="SHLD@3" pad="P$3"/>
-<connect gate="G$1" pin="SHLD@4" pad="P$4"/>
-<connect gate="G$1" pin="VCC" pad="P1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="adafruit">
-<packages>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="DOT">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FIDUCIAL">
-<description>For use by pick and place machines to calibrate the vision/machine, 1mm
-&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DOT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FIDUCIAL_1MM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8210,14 +8186,14 @@ DIN A3, landscape with location and doc. field</description>
 <part name="TESTCLOCK" library="ISS-Notify" deviceset="TESTPIN" device=""/>
 <part name="TESTGND" library="ISS-Notify" deviceset="TESTPIN" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="J1" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
+<part name="J1" library="ISS-Notify" deviceset="CON_USB-MICRO-ZX62D-B-5P8" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="U$6" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$7" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$8" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$9" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$10" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$11" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$6" library="ISS-Notify" deviceset="FIDUCIAL" device=""/>
+<part name="U$7" library="ISS-Notify" deviceset="FIDUCIAL" device=""/>
+<part name="U$8" library="ISS-Notify" deviceset="FIDUCIAL" device=""/>
+<part name="U$9" library="ISS-Notify" deviceset="FIDUCIAL" device=""/>
+<part name="U$10" library="ISS-Notify" deviceset="FIDUCIAL" device=""/>
+<part name="U$11" library="ISS-Notify" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8229,6 +8205,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="106.68" y="91.44" size="3.81" layer="97">Color LEDs</text>
 <text x="325.12" y="132.08" size="3.81" layer="97">Breakout Header</text>
 <text x="17.78" y="71.12" size="1.778" layer="97">Fiducials</text>
+<text x="96.52" y="236.22" size="1.778" layer="97">3.3V OUTPUT</text>
 </plain>
 <instances>
 <instance part="U1" gate="ATMEGA" x="177.8" y="177.8"/>
@@ -8682,25 +8659,25 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="340.36" y1="66.04" x2="340.36" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="35.56" y1="114.3" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="114.3" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="SHLD@1"/>
-<wire x1="33.02" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="109.22" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
 <junction x="35.56" y="114.3"/>
 <pinref part="J1" gate="G$1" pin="SHLD@2"/>
-<wire x1="33.02" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="106.68" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <junction x="35.56" y="109.22"/>
 <pinref part="J1" gate="G$1" pin="SHLD@3"/>
-<wire x1="33.02" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="104.14" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <junction x="35.56" y="106.68"/>
 <pinref part="J1" gate="G$1" pin="SHLD@4"/>
-<wire x1="33.02" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="101.6" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 <junction x="35.56" y="104.14"/>
 </segment>
@@ -8884,14 +8861,14 @@ DIN A3, landscape with location and doc. field</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R1" gate="R" pin="1"/>
-<wire x1="53.34" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="D+"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R2" gate="R" pin="1"/>
-<wire x1="33.02" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="D-"/>
 </segment>
 </net>
@@ -9006,7 +8983,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="C11" gate="CE" pin="1"/>
 <junction x="45.72" y="172.72"/>
 <pinref part="J1" gate="G$1" pin="VCC"/>
-<wire x1="33.02" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="124.46" x2="38.1" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
