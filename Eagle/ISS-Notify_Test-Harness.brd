@@ -13,17 +13,17 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -37,9 +37,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -49,7 +49,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -79,7 +79,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="TEMP" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="TEMP2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="TEMP2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -380,6 +380,15 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <rectangle x1="0.3899" y1="1.873" x2="0.8801" y2="2.9731" layer="51"/>
 <rectangle x1="-0.8801" y1="1.873" x2="-0.3899" y2="2.9731" layer="51"/>
 <rectangle x1="-2.1501" y1="1.873" x2="-1.6599" y2="2.9731" layer="51"/>
+</package>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -1514,6 +1523,28 @@ This package is identical to 0805-C, but has its tPlace silkscreen layer removed
 </package>
 </packages>
 </library>
+<library name="SparkFun-DiscreteSemi">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find discrete semiconductors- transistors, diodes, TRIACs, optoisolators, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOD-323">
+<wire x1="-0.9" y1="0.65" x2="-0.5" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.65" x2="0.9" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
+<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1832,7 +1863,21 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="Q1" library="max-viz" package="SOT-23" value="NTR4501N-D" x="0.254" y="-3.048"/>
 <element name="J1" library="ISS-Notify" package="USBMICROSMT-HIROSE" value="CON_USB-MICRO-ZX62D-B-5P8" x="1.651" y="17.907" rot="R270"/>
-<element name="U2" library="ISS-Notify" package="SO-8" value="LTC1153CS8" x="3.556" y="-10.033"/>
+<element name="C7" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="0" y="-16.256"/>
+<element name="C8" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="0" y="-25.908"/>
+<element name="R10" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="0" y="-30.734"/>
+<element name="R11" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="0" y="-35.56"/>
+<element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="-3.048" y="-45.466">
+<attribute name="PROD_ID" value="DIO-11284" x="-3.048" y="-45.466" size="0.762" layer="27" display="off"/>
+</element>
+<element name="R12" library="rcl_custom" package="0603-C-NOSILK" value="1 ohm" x="-3.302" y="-49.657"/>
+<element name="U2" library="ISS-Notify" package="SO-8" value="LTC1153CS8" x="0.254" y="-57.658"/>
+<element name="U$5" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-62.611"/>
+<element name="U$6" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-64.77"/>
+<element name="U$7" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-66.929"/>
+<element name="U$8" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-69.088"/>
+<element name="U$9" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-71.247"/>
+<element name="U$10" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-73.406"/>
 </elements>
 <signals>
 <signal name="UVCC">
@@ -2008,6 +2053,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J1" pad="P$2"/>
 <contactref element="J1" pad="P$3"/>
 <contactref element="J1" pad="P$4"/>
+<contactref element="U2" pad="5"/>
+<contactref element="R11" pad="1"/>
+<wire x1="-0.7" y1="-35.56" x2="2.159" y2="-55.185" width="0" layer="19" extent="1-1"/>
+<wire x1="13.7" y1="2.2" x2="-0.7" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="44"/>
@@ -2090,8 +2139,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="62" y1="47.6" x2="62" y2="44.5" width="0.4064" layer="1"/>
 <wire x1="62" y1="44.5" x2="59.55" y2="42.05" width="0.4064" layer="1"/>
 <wire x1="19.4" y1="41.7" x2="24" y2="37.8" width="0.6096" layer="1"/>
-<contactref element="Q1" pad="3"/>
-<wire x1="0.254" y1="-2.048" x2="25.592" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D-">
 <contactref element="U1" pad="3"/>
@@ -2286,7 +2333,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="62.4" y1="35.6" x2="60.54" y2="35.6" width="0.3048" layer="16"/>
 <wire x1="60.54" y1="35.6" x2="60.5" y2="35.56" width="0.3048" layer="16"/>
 <contactref element="TESTVBAT" pad="1"/>
+<contactref element="C8" pad="1"/>
+<contactref element="R12" pad="2"/>
+<contactref element="U2" pad="8"/>
 <wire x1="50.5" y1="53.2" x2="44.5" y2="58.3" width="0" layer="19" extent="16-16"/>
+<wire x1="-0.7" y1="-25.908" x2="11.4" y2="33.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.602" y1="-49.657" x2="-0.7" y2="-25.908" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.651" y1="-55.185" x2="-2.602" y2="-49.657" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TESTSCLK">
 <contactref element="JPROGRAMER" pad="3"/>
@@ -2445,12 +2498,52 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="50.3" y1="50.7" x2="51.1" y2="50.7" width="0.254" layer="1"/>
 </signal>
 <signal name="N$13">
+<contactref element="C7" pad="1"/>
+<contactref element="U2" pad="2"/>
+<wire x1="-0.7" y1="-16.256" x2="-0.381" y2="-60.385" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="C7" pad="2"/>
+<contactref element="U2" pad="4"/>
+<wire x1="0.7" y1="-16.256" x2="2.159" y2="-60.385" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="C8" pad="2"/>
+<contactref element="U2" pad="7"/>
+<contactref element="R12" pad="1"/>
+<contactref element="Q1" pad="3"/>
+<wire x1="-4.002" y1="-49.657" x2="-0.381" y2="-55.185" width="0" layer="19" extent="1-1"/>
+<wire x1="0.7" y1="-25.908" x2="-4.002" y2="-49.657" width="0" layer="19" extent="1-1"/>
+<wire x1="0.254" y1="-2.048" x2="0.7" y2="-25.908" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FUSE_STATUS_UC">
 <contactref element="U1" pad="1"/>
+<contactref element="R10" pad="1"/>
+<contactref element="R11" pad="2"/>
+<wire x1="-0.7" y1="-30.734" x2="25.75" y2="35.75" width="0" layer="19" extent="1-1"/>
+<wire x1="0.7" y1="-35.56" x2="-0.7" y2="-30.734" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="Q1" pad="1"/>
+<contactref element="D1" pad="C"/>
+<contactref element="U2" pad="6"/>
+<wire x1="-4.198" y1="-45.466" x2="0.889" y2="-55.185" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.696" y1="-4.048" x2="-4.198" y2="-45.466" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$19">
+<contactref element="D1" pad="A"/>
+<contactref element="Q1" pad="2"/>
+<wire x1="1.204" y1="-4.048" x2="-1.898" y2="-45.466" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15">
+<contactref element="U2" pad="1"/>
+</signal>
+<signal name="N$17">
+<contactref element="U2" pad="3"/>
+<contactref element="R10" pad="2"/>
+<wire x1="0.7" y1="-30.734" x2="0.889" y2="-60.385" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,0d3c17b215f60f78"/>
-</errors>
 </board>
 </drawing>
 </eagle>
