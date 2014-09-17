@@ -48,7 +48,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -1734,7 +1734,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="43.684" y="31.7" size="0.8128" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="U3" library="ISS-Notify" package="QFN10" value="TPS63001" x="10.51" y="43.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.91" y="45.6" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="NAME" x="13.91" y="45.6" size="0.762" layer="25" font="vector" ratio="20" rot="R180"/>
 </element>
 <element name="L1" library="ISS-Notify" package="0805-C-NOSILK" value="3.3 uH" x="10.56" y="46.66" smashed="yes">
 <attribute name="NAME" x="9.96" y="47.76" size="0.8" layer="25" font="vector" ratio="20"/>
@@ -1757,7 +1757,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="29.75" y="39.586" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C2" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="35.75" y="40.386" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.1" y="41.886" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="36.1" y="41.886" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="37.75" y="39.586" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C3" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="40.486" y="28.55" smashed="yes">
@@ -1777,7 +1777,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="35.316" y="22.544" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C10" library="rcl_custom" package="0805-C-NOSILK" value="22 uF" x="15.4" y="40.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="16.6" y="42" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="16.6" y="42" size="0.762" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="13.5" y="41.7" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C12" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="22.2" y="31.8" smashed="yes" rot="R180">
@@ -1807,7 +1807,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="6.985" y="0.635" size="1.27" layer="27"/>
 </element>
 <element name="TESTVBAT" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="44.5" y="58.3" smashed="yes">
-<attribute name="NAME" x="45.864" y="57.832" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="44.911" y="51.325" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="TESTSCL" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="36.2" y="10" smashed="yes">
 <attribute name="NAME" x="33.9" y="7.7" size="0.8128" layer="25" font="vector" ratio="20"/>
@@ -1816,13 +1816,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="43.8" y="11.1" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="TESTDATA" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="27.3" y="44.8" smashed="yes">
-<attribute name="NAME" x="28.8" y="43.9" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="28.8" y="43.9" size="0.762" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="TESTCLOCK" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="27.3" y="47.1" smashed="yes">
-<attribute name="NAME" x="28.7" y="47.8" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="28.7" y="47.8" size="0.762" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="TESTGND" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="41.91" y="58.293" smashed="yes">
-<attribute name="NAME" x="40.481" y="58.642" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="NAME" x="42.386" y="52.102" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="TESTMISO" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="13.95" y="33.9" smashed="yes"/>
 <element name="TESTVCC" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="11.4" y="33.9" smashed="yes"/>
@@ -1861,23 +1861,50 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="48.9" y="44.65" size="0.8" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="51" y="43.1" size="1" layer="27" ratio="10"/>
 </element>
-<element name="Q1" library="max-viz" package="SOT-23" value="NTR4501N-D" x="0.254" y="-3.048"/>
-<element name="J1" library="ISS-Notify" package="USBMICROSMT-HIROSE" value="CON_USB-MICRO-ZX62D-B-5P8" x="1.651" y="17.907" rot="R270"/>
-<element name="C7" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="0" y="-16.256"/>
-<element name="C8" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="0" y="-25.908"/>
-<element name="R10" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="0" y="-30.734"/>
-<element name="R11" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="0" y="-35.56"/>
-<element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="-3.048" y="-45.466">
-<attribute name="PROD_ID" value="DIO-11284" x="-3.048" y="-45.466" size="0.762" layer="27" display="off"/>
+<element name="Q1" library="max-viz" package="SOT-23" value="NTR4501N-D" x="34.798" y="54.864" smashed="yes">
+<attribute name="NAME" x="36.83" y="54.483" size="0.762" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="36.576" y="54.356" size="0.4064" layer="27"/>
 </element>
-<element name="R12" library="rcl_custom" package="0603-C-NOSILK" value="1 ohm" x="-3.302" y="-49.657"/>
-<element name="U2" library="ISS-Notify" package="SO-8" value="LTC1153CS8" x="0.254" y="-57.658"/>
-<element name="U$5" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-62.611"/>
-<element name="U$6" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-64.77"/>
-<element name="U$7" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-66.929"/>
-<element name="U$8" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-69.088"/>
-<element name="U$9" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-71.247"/>
-<element name="U$10" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="-3.429" y="-73.406"/>
+<element name="J1" library="ISS-Notify" package="USBMICROSMT-HIROSE" value="CON_USB-MICRO-ZX62D-B-5P8" x="1.651" y="17.907" rot="R270"/>
+<element name="C7" library="rcl_custom" package="0603-C-NOSILK" value="1 uF" x="21.082" y="57.277" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.635" y="60.49" size="0.762" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="VALUE" x="19.082" y="58.077" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C8" library="rcl_custom" package="0603-C-NOSILK" value="0.1 uF" x="34.925" y="58.674" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.875" y="59.855" size="0.762" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="VALUE" x="32.925" y="59.474" size="1" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R10" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="21.209" y="51.435" smashed="yes">
+<attribute name="NAME" x="23.076" y="52.893" size="0.762" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="20.409" y="49.435" size="1" layer="27" ratio="10"/>
+</element>
+<element name="R11" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="18.288" y="51.435" smashed="yes">
+<attribute name="NAME" x="14.694" y="51.115" size="0.762" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="17.488" y="49.435" size="1" layer="27" ratio="10"/>
+</element>
+<element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="34.798" y="51.435" smashed="yes">
+<attribute name="PROD_ID" value="DIO-11284" x="34.798" y="51.435" size="0.762" layer="27" display="off"/>
+<attribute name="NAME" x="34.163" y="49.53" size="0.762" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="33.782" y="50.038" size="0.4064" layer="27"/>
+</element>
+<element name="R12" library="rcl_custom" package="0603-C-NOSILK" value="1 ohm" x="33.02" y="58.674" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.303" y="59.728" size="0.762" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="VALUE" x="35.02" y="57.874" size="1" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="U2" library="ISS-Notify" package="SO-8" value="LTC1153CS8" x="26.67" y="57.404" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.019" y="60.452" size="0.762" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="24.638" y="52.959" size="1.27" layer="27"/>
+</element>
+<element name="F1" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="64.77" y="46.355"/>
+<element name="F2" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="65.151" y="44.704"/>
+<element name="F4" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="65.151" y="40.767" rot="MR0"/>
+<element name="F5" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="65.151" y="38.862" rot="MR0"/>
+<element name="F3" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="64.897" y="42.672"/>
+<element name="F6" library="ISS-Notify" package="FIDUCIAL_1MM" value="FIDUCIAL" x="65.151" y="36.576" rot="MR0"/>
+<element name="R13" library="rcl_custom" package="0603-C-NOSILK" value="51k" x="21.209" y="53.213" smashed="yes" rot="R180">
+<attribute name="NAME" x="23.076" y="51.115" size="0.762" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="22.009" y="55.213" size="1" layer="27" ratio="10" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="UVCC">
@@ -1903,16 +1930,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U1" pad="7"/>
 <contactref element="U3" pad="5"/>
 <contactref element="U3" pad="8"/>
-<wire x1="5.5" y1="40" x2="5.5" y2="43.3" width="0.6096" layer="1"/>
-<wire x1="5.5" y1="43.3" x2="6.9" y2="44.7" width="0.6096" layer="1"/>
 <wire x1="9.51" y1="44.675" x2="9.325" y2="44.675" width="0.254" layer="1"/>
 <wire x1="9.325" y1="44.675" x2="9.3" y2="44.7" width="0.254" layer="1"/>
-<wire x1="9.3" y1="44.7" x2="6.9" y2="44.7" width="0.6096" layer="1"/>
 <wire x1="5.611" y1="19.2" x2="6.223" y2="19.812" width="0.6096" layer="1"/>
 <wire x1="6.223" y1="19.812" x2="6.223" y2="21.717" width="0.6096" layer="1"/>
 <wire x1="6.223" y1="21.717" x2="4.4" y2="23.54" width="0.6096" layer="1"/>
 <wire x1="4.4" y1="24.1" x2="4.4" y2="38.9" width="0.6096" layer="1"/>
-<wire x1="4.4" y1="38.9" x2="5.5" y2="40" width="0.6096" layer="1"/>
 <wire x1="4.4" y1="38.64" x2="4.4" y2="38.9" width="0.254" layer="1"/>
 <wire x1="25.75" y1="30.95" x2="23.95" y2="30.95" width="0.254" layer="1"/>
 <wire x1="23.95" y1="30.95" x2="16.9" y2="23.9" width="0.254" layer="1"/>
@@ -1922,10 +1945,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.7" y1="23.9" x2="4.6" y2="23.9" width="0.254" layer="1"/>
 <wire x1="4.6" y1="23.9" x2="4.4" y2="24.1" width="0.254" layer="1"/>
 <contactref element="U3" pad="6"/>
-<wire x1="9.51" y1="41.725" x2="9.425" y2="41.725" width="0.3048" layer="1"/>
-<wire x1="9.425" y1="41.725" x2="9.3" y2="41.7" width="0.3048" layer="1"/>
-<wire x1="9.3" y1="41.7" x2="7.2" y2="41.7" width="0.6096" layer="1"/>
-<wire x1="7.2" y1="41.7" x2="5.5" y2="40" width="0.6096" layer="1"/>
 <wire x1="9.51" y1="41.725" x2="9.51" y2="40.89" width="0.254" layer="1"/>
 <wire x1="9.51" y1="40.89" x2="9.8" y2="40.5" width="0.254" layer="1"/>
 <wire x1="9.8" y1="40.5" x2="10.2" y2="40.5" width="0.254" layer="1"/>
@@ -1936,6 +1955,31 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.4" y1="24.1" x2="4.4" y2="23.54" width="0.6096" layer="1"/>
 <wire x1="4.326" y1="18.953" x2="5.364" y2="18.953" width="0.254" layer="1"/>
 <wire x1="5.364" y1="18.953" x2="5.611" y2="19.2" width="0.254" layer="1"/>
+<contactref element="C8" pad="1"/>
+<contactref element="R12" pad="2"/>
+<contactref element="U2" pad="8"/>
+<contactref element="R13" pad="2"/>
+<contactref element="U2" pad="1"/>
+<wire x1="18.161" y1="60.706" x2="12.573" y2="55.118" width="0.6096" layer="1"/>
+<wire x1="12.573" y1="55.118" x2="4.4" y2="46.945" width="0.6096" layer="1"/>
+<wire x1="4.4" y1="44.704" x2="4.4" y2="46.945" width="0.6096" layer="1"/>
+<wire x1="9.3" y1="44.7" x2="4.404" y2="44.7" width="0.6096" layer="1"/>
+<wire x1="4.404" y1="44.7" x2="4.4" y2="44.704" width="0.6096" layer="1"/>
+<wire x1="4.458" y1="41.725" x2="9.34" y2="41.725" width="0.6096" layer="1"/>
+<wire x1="9.51" y1="41.725" x2="9.34" y2="41.725" width="0.254" layer="1"/>
+<wire x1="4.404" y1="44.7" x2="4.404" y2="41.779" width="0.6096" layer="1"/>
+<wire x1="4.404" y1="41.779" x2="4.458" y2="41.725" width="0.6096" layer="1"/>
+<wire x1="4.4" y1="38.9" x2="4.4" y2="41.667" width="0.6096" layer="1"/>
+<wire x1="4.4" y1="41.667" x2="4.458" y2="41.725" width="0.6096" layer="1"/>
+<wire x1="23.943" y1="59.309" x2="23.943" y2="60.004" width="0.6096" layer="1"/>
+<wire x1="23.943" y1="60.004" x2="23.241" y2="60.706" width="0.6096" layer="1"/>
+<wire x1="23.241" y1="60.706" x2="18.161" y2="60.706" width="0.6096" layer="1"/>
+<wire x1="20.509" y1="53.213" x2="14.478" y2="53.213" width="0.6096" layer="1"/>
+<wire x1="14.478" y1="53.213" x2="12.573" y2="55.118" width="0.6096" layer="1"/>
+<wire x1="23.943" y1="59.309" x2="29.143" y2="59.309" width="0.6096" layer="1"/>
+<wire x1="29.143" y1="59.309" x2="32.955" y2="59.309" width="0.6096" layer="1"/>
+<wire x1="32.955" y1="59.309" x2="33.02" y2="59.374" width="0.6096" layer="1"/>
+<wire x1="33.02" y1="59.374" x2="34.925" y2="59.374" width="0.6096" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="C10" pad="2"/>
@@ -2055,8 +2099,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J1" pad="P$4"/>
 <contactref element="U2" pad="5"/>
 <contactref element="R11" pad="1"/>
-<wire x1="-0.7" y1="-35.56" x2="2.159" y2="-55.185" width="0" layer="19" extent="1-1"/>
-<wire x1="13.7" y1="2.2" x2="-0.7" y2="-35.56" width="0" layer="19" extent="1-1"/>
+<contactref element="C7" pad="2"/>
+<contactref element="U2" pad="4"/>
+<contactref element="U1" pad="42"/>
+<via x="23.983" y="54.326" extent="1-16" drill="0.36"/>
+<via x="19.792" y="56.612" extent="1-16" drill="0.36"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="44"/>
@@ -2332,14 +2379,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="62.8" y1="36" x2="62.4" y2="35.6" width="0.3048" layer="16"/>
 <wire x1="62.4" y1="35.6" x2="60.54" y2="35.6" width="0.3048" layer="16"/>
 <wire x1="60.54" y1="35.6" x2="60.5" y2="35.56" width="0.3048" layer="16"/>
-<contactref element="TESTVBAT" pad="1"/>
-<contactref element="C8" pad="1"/>
-<contactref element="R12" pad="2"/>
-<contactref element="U2" pad="8"/>
-<wire x1="50.5" y1="53.2" x2="44.5" y2="58.3" width="0" layer="19" extent="16-16"/>
-<wire x1="-0.7" y1="-25.908" x2="11.4" y2="33.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.602" y1="-49.657" x2="-0.7" y2="-25.908" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.651" y1="-55.185" x2="-2.602" y2="-49.657" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TESTSCLK">
 <contactref element="JPROGRAMER" pad="3"/>
@@ -2500,50 +2539,76 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$13">
 <contactref element="C7" pad="1"/>
 <contactref element="U2" pad="2"/>
-<wire x1="-0.7" y1="-16.256" x2="-0.381" y2="-60.385" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$14">
-<contactref element="C7" pad="2"/>
-<contactref element="U2" pad="4"/>
-<wire x1="0.7" y1="-16.256" x2="2.159" y2="-60.385" width="0" layer="19" extent="1-1"/>
+<wire x1="23.943" y1="58.039" x2="21.144" y2="58.039" width="0.6096" layer="1"/>
+<wire x1="21.144" y1="58.039" x2="21.082" y2="57.977" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="C8" pad="2"/>
 <contactref element="U2" pad="7"/>
 <contactref element="R12" pad="1"/>
 <contactref element="Q1" pad="3"/>
-<wire x1="-4.002" y1="-49.657" x2="-0.381" y2="-55.185" width="0" layer="19" extent="1-1"/>
-<wire x1="0.7" y1="-25.908" x2="-4.002" y2="-49.657" width="0" layer="19" extent="1-1"/>
-<wire x1="0.254" y1="-2.048" x2="0.7" y2="-25.908" width="0" layer="19" extent="1-1"/>
+<wire x1="29.143" y1="58.039" x2="32.955" y2="58.039" width="0.6096" layer="1"/>
+<wire x1="32.955" y1="58.039" x2="33.02" y2="57.974" width="0.6096" layer="1"/>
+<wire x1="33.02" y1="57.974" x2="34.925" y2="57.974" width="0.6096" layer="1"/>
+<wire x1="34.798" y1="55.864" x2="34.798" y2="57.847" width="0.6096" layer="1"/>
+<wire x1="34.798" y1="57.847" x2="34.925" y2="57.974" width="0.6096" layer="1"/>
 </signal>
-<signal name="FUSE_STATUS_UC">
+<signal name="!FUSE_STATUS_UC">
 <contactref element="U1" pad="1"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R11" pad="2"/>
-<wire x1="-0.7" y1="-30.734" x2="25.75" y2="35.75" width="0" layer="19" extent="1-1"/>
-<wire x1="0.7" y1="-35.56" x2="-0.7" y2="-30.734" width="0" layer="19" extent="1-1"/>
+<wire x1="18.988" y1="51.435" x2="20.509" y2="51.435" width="0.6096" layer="1"/>
+<wire x1="25.75" y1="35.75" x2="23.051" y2="35.75" width="0.6096" layer="1"/>
+<wire x1="23.051" y1="35.75" x2="21.971" y2="36.83" width="0.6096" layer="1"/>
+<via x="21.971" y="36.83" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<wire x1="21.971" y1="36.83" x2="21.971" y2="41.402" width="0.6096" layer="16"/>
+<via x="21.971" y="41.402" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<wire x1="21.971" y1="41.402" x2="21.971" y2="48.768" width="0.6096" layer="1"/>
+<wire x1="21.971" y1="48.768" x2="20.574" y2="50.165" width="0.6096" layer="1"/>
+<wire x1="20.574" y1="50.165" x2="20.574" y2="51.37" width="0.6096" layer="1"/>
+<wire x1="20.574" y1="51.37" x2="20.509" y2="51.435" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="Q1" pad="1"/>
 <contactref element="D1" pad="C"/>
 <contactref element="U2" pad="6"/>
-<wire x1="-4.198" y1="-45.466" x2="0.889" y2="-55.185" width="0" layer="19" extent="1-1"/>
-<wire x1="-0.696" y1="-4.048" x2="-4.198" y2="-45.466" width="0" layer="19" extent="1-1"/>
+<wire x1="29.143" y1="56.769" x2="31.75" y2="56.769" width="0.6096" layer="1"/>
+<wire x1="31.75" y1="56.769" x2="32.512" y2="56.007" width="0.6096" layer="1"/>
+<wire x1="32.512" y1="56.007" x2="32.512" y2="55.2" width="0.6096" layer="1"/>
+<wire x1="32.512" y1="55.2" x2="33.848" y2="53.864" width="0.6096" layer="1"/>
+<wire x1="33.848" y1="53.864" x2="33.848" y2="53.406" width="0.6096" layer="1"/>
+<wire x1="33.848" y1="53.406" x2="33.655" y2="53.213" width="0.6096" layer="1"/>
+<wire x1="33.655" y1="53.213" x2="33.655" y2="51.442" width="0.6096" layer="1"/>
+<wire x1="33.655" y1="51.442" x2="33.648" y2="51.435" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="D1" pad="A"/>
 <contactref element="Q1" pad="2"/>
-<wire x1="1.204" y1="-4.048" x2="-1.898" y2="-45.466" width="0" layer="19" extent="1-1"/>
+<contactref element="TESTVBAT" pad="1"/>
+<wire x1="35.748" y1="53.864" x2="35.748" y2="53.406" width="0.6096" layer="1"/>
+<wire x1="35.748" y1="53.406" x2="35.941" y2="53.213" width="0.6096" layer="1"/>
+<wire x1="35.941" y1="53.213" x2="35.941" y2="51.442" width="0.6096" layer="1"/>
+<wire x1="35.941" y1="51.442" x2="35.948" y2="51.435" width="0.6096" layer="1"/>
+<wire x1="35.748" y1="53.864" x2="43.069" y2="53.864" width="0.6096" layer="1"/>
+<wire x1="43.069" y1="53.864" x2="44.577" y2="55.372" width="0.6096" layer="1"/>
+<wire x1="44.577" y1="55.372" x2="44.577" y2="58.223" width="0.6096" layer="1"/>
+<wire x1="44.577" y1="58.223" x2="44.5" y2="58.3" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$15">
-<contactref element="U2" pad="1"/>
-</signal>
-<signal name="N$17">
+<signal name="!STATUS">
 <contactref element="U2" pad="3"/>
 <contactref element="R10" pad="2"/>
-<wire x1="0.7" y1="-30.734" x2="0.889" y2="-60.385" width="0" layer="19" extent="1-1"/>
+<contactref element="R13" pad="1"/>
+<wire x1="23.943" y1="56.769" x2="26.289" y2="56.769" width="0.6096" layer="1"/>
+<wire x1="26.289" y1="56.769" x2="26.797" y2="56.261" width="0.6096" layer="1"/>
+<wire x1="26.797" y1="56.261" x2="26.797" y2="53.848" width="0.6096" layer="1"/>
+<wire x1="26.797" y1="53.848" x2="26.162" y2="53.213" width="0.6096" layer="1"/>
+<wire x1="26.162" y1="53.213" x2="21.909" y2="53.213" width="0.6096" layer="1"/>
+<wire x1="21.909" y1="51.435" x2="21.909" y2="53.213" width="0.6096" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,0d3c17b215f60f78"/>
+</errors>
 </board>
 </drawing>
 </eagle>
