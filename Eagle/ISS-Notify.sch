@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8148,8 +8148,8 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="U5" library="ISS-Notify" deviceset="TLC5971" device=""/>
 <part name="U6" library="ISS-Notify" deviceset="TLC5971" device=""/>
-<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1 k"/>
-<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1 k"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10 k"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10 k"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>

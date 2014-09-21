@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1792,6 +1792,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2005,11 +2008,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U6" library="ISS-Notify" package="R-PDSO-G20" value="TLC5971" x="26.67" y="12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.57" y="17.2" size="0.8128" layer="21" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="R7" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="33.362" y="51.934" smashed="yes" rot="R270">
+<element name="R7" library="rcl_custom" package="0603-C-NOSILK" value="10 k" x="33.362" y="51.934" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.812" y="52.634" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="31.362" y="52.734" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R8" library="rcl_custom" package="0603-C-NOSILK" value="1 k" x="30.998" y="9.05" smashed="yes" rot="R90">
+<element name="R8" library="rcl_custom" package="0603-C-NOSILK" value="10 k" x="30.998" y="9.05" smashed="yes" rot="R90">
 <attribute name="NAME" x="32.548" y="8.45" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="32.998" y="8.25" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
