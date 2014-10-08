@@ -7854,8 +7854,8 @@ Production Part - 8199
 <part name="C8" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="0.1 uF"/>
 <part name="R10" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1 k"/>
 <part name="R11" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1 k"/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1 ohm"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="6V"/>
+<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="250 milliohms"/>
 <part name="U2" library="ISS-Notify" deviceset="LTC1153CS8" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -7993,7 +7993,10 @@ WE INJECT 5V INTO THE BOARD UNDER TEST THROUGH THE VBAT POGO</text>
 <attribute name="NAME" x="106.68" y="84.3026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="106.68" y="81.5086" size="1.778" layer="96"/>
 </instance>
-<instance part="R12" gate="R" x="114.3" y="106.68" rot="R90"/>
+<instance part="R12" gate="R" x="114.3" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.8014" y="102.87" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="117.602" y="97.79" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="U2" gate="G$1" x="71.12" y="91.44"/>
 <instance part="GND4" gate="1" x="93.98" y="73.66"/>
 <instance part="GND10" gate="1" x="162.56" y="68.58"/>

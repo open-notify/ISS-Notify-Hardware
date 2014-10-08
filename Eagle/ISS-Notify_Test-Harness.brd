@@ -1821,8 +1821,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TESTCLOCK" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="27.3" y="47.1" smashed="yes">
 <attribute name="NAME" x="28.7" y="47.8" size="0.762" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="TESTGND" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="41.91" y="58.293" smashed="yes">
-<attribute name="NAME" x="42.386" y="52.102" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
+<element name="TESTGND" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="39.37" y="60.96" smashed="yes">
+<attribute name="NAME" x="39.846" y="54.769" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="TESTMISO" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="13.95" y="33.9" smashed="yes"/>
 <element name="TESTVCC" library="ISS-Notify" package="POGOPIN" value="POGOPIN" x="11.4" y="33.9" smashed="yes"/>
@@ -1882,12 +1882,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="14.694" y="51.115" size="0.762" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="17.488" y="49.435" size="1" layer="27" ratio="10"/>
 </element>
-<element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="34.798" y="51.435" smashed="yes">
+<element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="6V" x="34.798" y="51.435" smashed="yes">
 <attribute name="PROD_ID" value="DIO-11284" x="34.798" y="51.435" size="0.762" layer="27" display="off"/>
 <attribute name="NAME" x="34.163" y="49.53" size="0.762" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="33.782" y="50.038" size="0.4064" layer="27"/>
 </element>
-<element name="R12" library="rcl_custom" package="0603-C-NOSILK" value="1 ohm" x="33.02" y="58.674" smashed="yes" rot="R90">
+<element name="R12" library="rcl_custom" package="0603-C-NOSILK" value="250 milliohms" x="33.02" y="58.674" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.303" y="59.728" size="0.762" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="35.02" y="57.874" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
@@ -2606,9 +2606,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="21.909" y1="51.435" x2="21.909" y2="53.213" width="0.6096" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,0d3c17b215f60f78"/>
-</errors>
 </board>
 </drawing>
 </eagle>
